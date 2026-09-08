@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇳🇴 NO 01 - tammader",
+        "🇳🇴 NO 02 - tammader",
+        "🇳🇴 NO 03 - tammader",
+        "🇳🇴 NO 04 - tammader"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇳🇴 NO 01 - tammader",
+        "🇳🇴 NO 02 - tammader",
+        "🇳🇴 NO 03 - tammader",
+        "🇳🇴 NO 04 - tammader"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

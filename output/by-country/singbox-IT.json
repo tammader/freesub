@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇮🇹 意大利 (Italy) 01 - tammader",
+        "🇮🇹 意大利 (Italy) 02 - tammader",
+        "🇮🇹 意大利 (Italy) 03 - tammader",
+        "🇮🇹 意大利 (Italy) 04 - tammader",
+        "🇮🇹 意大利 (Italy) 05 - tammader",
+        "🇮🇹 意大利 (Italy) 06 - tammader",
+        "🇮🇹 意大利 (Italy) 07 - tammader",
+        "🇮🇹 意大利 (Italy) 08 - tammader",
+        "🇮🇹 意大利 (Italy) 09 - tammader",
+        "🇮🇹 意大利 (Italy) 10 - tammader",
+        "🇮🇹 意大利 (Italy) 11 - tammader",
+        "🇮🇹 意大利 (Italy) 12 - tammader",
+        "🇮🇹 意大利 (Italy) 13 - tammader",
+        "🇮🇹 意大利 (Italy) 14 - tammader"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇮🇹 意大利 (Italy) 01 - tammader",
+        "🇮🇹 意大利 (Italy) 02 - tammader",
+        "🇮🇹 意大利 (Italy) 03 - tammader",
+        "🇮🇹 意大利 (Italy) 04 - tammader",
+        "🇮🇹 意大利 (Italy) 05 - tammader",
+        "🇮🇹 意大利 (Italy) 06 - tammader",
+        "🇮🇹 意大利 (Italy) 07 - tammader",
+        "🇮🇹 意大利 (Italy) 08 - tammader",
+        "🇮🇹 意大利 (Italy) 09 - tammader",
+        "🇮🇹 意大利 (Italy) 10 - tammader",
+        "🇮🇹 意大利 (Italy) 11 - tammader",
+        "🇮🇹 意大利 (Italy) 12 - tammader",
+        "🇮🇹 意大利 (Italy) 13 - tammader",
+        "🇮🇹 意大利 (Italy) 14 - tammader"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

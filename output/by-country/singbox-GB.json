@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇬🇧 英国 (United Kingdom) 01 - tammader",
+        "🇬🇧 英国 (United Kingdom) 02 - tammader",
+        "🇬🇧 英国 (United Kingdom) 03 - tammader",
+        "🇬🇧 英国 (United Kingdom) 04 - tammader",
+        "🇬🇧 英国 (United Kingdom) 05 - tammader",
+        "🇬🇧 英国 (United Kingdom) 06 - tammader",
+        "🇬🇧 英国 (United Kingdom) 07 - tammader",
+        "🇬🇧 英国 (United Kingdom) 08 - tammader",
+        "🇬🇧 英国 (United Kingdom) 09 - tammader",
+        "🇬🇧 英国 (United Kingdom) 10 - tammader",
+        "🇬🇧 英国 (United Kingdom) 11 - tammader",
+        "🇬🇧 英国 (United Kingdom) 12 - tammader",
+        "🇬🇧 英国 (United Kingdom) 13 - tammader",
+        "🇬🇧 英国 (United Kingdom) 14 - tammader",
+        "🇬🇧 英国 (United Kingdom) 15 - tammader",
+        "🇬🇧 英国 (United Kingdom) 16 - tammader",
+        "🇬🇧 英国 (United Kingdom) 17 - tammader",
+        "🇬🇧 英国 (United Kingdom) 18 - tammader",
+        "🇬🇧 英国 (United Kingdom) 19 - tammader",
+        "🇬🇧 英国 (United Kingdom) 20 - tammader",
+        "🇬🇧 英国 (United Kingdom) 21 - tammader",
+        "🇬🇧 英国 (United Kingdom) 22 - tammader",
+        "🇬🇧 英国 (United Kingdom) 23 - tammader",
+        "🇬🇧 英国 (United Kingdom) 24 - tammader"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇬🇧 英国 (United Kingdom) 01 - tammader",
+        "🇬🇧 英国 (United Kingdom) 02 - tammader",
+        "🇬🇧 英国 (United Kingdom) 03 - tammader",
+        "🇬🇧 英国 (United Kingdom) 04 - tammader",
+        "🇬🇧 英国 (United Kingdom) 05 - tammader",
+        "🇬🇧 英国 (United Kingdom) 06 - tammader",
+        "🇬🇧 英国 (United Kingdom) 07 - tammader",
+        "🇬🇧 英国 (United Kingdom) 08 - tammader",
+        "🇬🇧 英国 (United Kingdom) 09 - tammader",
+        "🇬🇧 英国 (United Kingdom) 10 - tammader",
+        "🇬🇧 英国 (United Kingdom) 11 - tammader",
+        "🇬🇧 英国 (United Kingdom) 12 - tammader",
+        "🇬🇧 英国 (United Kingdom) 13 - tammader",
+        "🇬🇧 英国 (United Kingdom) 14 - tammader",
+        "🇬🇧 英国 (United Kingdom) 15 - tammader",
+        "🇬🇧 英国 (United Kingdom) 16 - tammader",
+        "🇬🇧 英国 (United Kingdom) 17 - tammader",
+        "🇬🇧 英国 (United Kingdom) 18 - tammader",
+        "🇬🇧 英国 (United Kingdom) 19 - tammader",
+        "🇬🇧 英国 (United Kingdom) 20 - tammader",
+        "🇬🇧 英国 (United Kingdom) 21 - tammader",
+        "🇬🇧 英国 (United Kingdom) 22 - tammader",
+        "🇬🇧 英国 (United Kingdom) 23 - tammader",
+        "🇬🇧 英国 (United Kingdom) 24 - tammader"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

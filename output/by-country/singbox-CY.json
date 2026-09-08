@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇾 CY 01 - tammader",
+        "🇨🇾 CY 02 - tammader",
+        "🇨🇾 CY 03 - tammader",
+        "🇨🇾 CY 04 - tammader",
+        "🇨🇾 CY 05 - tammader",
+        "🇨🇾 CY 06 - tammader"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇾 CY 01 - tammader",
+        "🇨🇾 CY 02 - tammader",
+        "🇨🇾 CY 03 - tammader",
+        "🇨🇾 CY 04 - tammader",
+        "🇨🇾 CY 05 - tammader",
+        "🇨🇾 CY 06 - tammader"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

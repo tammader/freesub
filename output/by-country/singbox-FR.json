@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇫🇷 法国 (France) 01 - tammader",
+        "🇫🇷 法国 (France) 02 - tammader",
+        "🇫🇷 法国 (France) 03 - tammader",
+        "🇫🇷 法国 (France) 04 - tammader",
+        "🇫🇷 法国 (France) 05 - tammader",
+        "🇫🇷 法国 (France) 06 - tammader",
+        "🇫🇷 法国 (France) 07 - tammader",
+        "🇫🇷 法国 (France) 08 - tammader",
+        "🇫🇷 法国 (France) 09 - tammader",
+        "🇫🇷 法国 (France) 10 - tammader",
+        "🇫🇷 法国 (France) 11 - tammader",
+        "🇫🇷 法国 (France) 12 - tammader",
+        "🇫🇷 法国 (France) 13 - tammader",
+        "🇫🇷 法国 (France) 14 - tammader",
+        "🇫🇷 法国 (France) 15 - tammader",
+        "🇫🇷 法国 (France) 16 - tammader",
+        "🇫🇷 法国 (France) 17 - tammader",
+        "🇫🇷 法国 (France) 18 - tammader",
+        "🇫🇷 法国 (France) 19 - tammader",
+        "🇫🇷 法国 (France) 20 - tammader",
+        "🇫🇷 法国 (France) 21 - tammader",
+        "🇫🇷 法国 (France) 22 - tammader",
+        "🇫🇷 法国 (France) 23 - tammader",
+        "🇫🇷 法国 (France) 24 - tammader",
+        "🇫🇷 法国 (France) 25 - tammader",
+        "🇫🇷 法国 (France) 26 - tammader",
+        "🇫🇷 法国 (France) 27 - tammader",
+        "🇫🇷 法国 (France) 28 - tammader",
+        "🇫🇷 法国 (France) 29 - tammader",
+        "🇫🇷 法国 (France) 30 - tammader"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇫🇷 法国 (France) 01 - tammader",
+        "🇫🇷 法国 (France) 02 - tammader",
+        "🇫🇷 法国 (France) 03 - tammader",
+        "🇫🇷 法国 (France) 04 - tammader",
+        "🇫🇷 法国 (France) 05 - tammader",
+        "🇫🇷 法国 (France) 06 - tammader",
+        "🇫🇷 法国 (France) 07 - tammader",
+        "🇫🇷 法国 (France) 08 - tammader",
+        "🇫🇷 法国 (France) 09 - tammader",
+        "🇫🇷 法国 (France) 10 - tammader",
+        "🇫🇷 法国 (France) 11 - tammader",
+        "🇫🇷 法国 (France) 12 - tammader",
+        "🇫🇷 法国 (France) 13 - tammader",
+        "🇫🇷 法国 (France) 14 - tammader",
+        "🇫🇷 法国 (France) 15 - tammader",
+        "🇫🇷 法国 (France) 16 - tammader",
+        "🇫🇷 法国 (France) 17 - tammader",
+        "🇫🇷 法国 (France) 18 - tammader",
+        "🇫🇷 法国 (France) 19 - tammader",
+        "🇫🇷 法国 (France) 20 - tammader",
+        "🇫🇷 法国 (France) 21 - tammader",
+        "🇫🇷 法国 (France) 22 - tammader",
+        "🇫🇷 法国 (France) 23 - tammader",
+        "🇫🇷 法国 (France) 24 - tammader",
+        "🇫🇷 法国 (France) 25 - tammader",
+        "🇫🇷 法国 (France) 26 - tammader",
+        "🇫🇷 法国 (France) 27 - tammader",
+        "🇫🇷 法国 (France) 28 - tammader",
+        "🇫🇷 法国 (France) 29 - tammader",
+        "🇫🇷 法国 (France) 30 - tammader"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

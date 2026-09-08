@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇸🇬 新加坡 (Singapore) 01 - tammader",
+        "🇸🇬 新加坡 (Singapore) 02 - tammader",
+        "🇸🇬 新加坡 (Singapore) 03 - tammader",
+        "🇸🇬 新加坡 (Singapore) 04 - tammader",
+        "🇸🇬 新加坡 (Singapore) 05 - tammader",
+        "🇸🇬 新加坡 (Singapore) 06 - tammader",
+        "🇸🇬 新加坡 (Singapore) 07 - tammader",
+        "🇸🇬 新加坡 (Singapore) 08 - tammader",
+        "🇸🇬 新加坡 (Singapore) 09 - tammader",
+        "🇸🇬 新加坡 (Singapore) 10 - tammader",
+        "🇸🇬 新加坡 (Singapore) 11 - tammader",
+        "🇸🇬 新加坡 (Singapore) 12 - tammader",
+        "🇸🇬 新加坡 (Singapore) 13 - tammader",
+        "🇸🇬 新加坡 (Singapore) 14 - tammader",
+        "🇸🇬 新加坡 (Singapore) 15 - tammader",
+        "🇸🇬 新加坡 (Singapore) 16 - tammader",
+        "🇸🇬 新加坡 (Singapore) 17 - tammader",
+        "🇸🇬 新加坡 (Singapore) 18 - tammader",
+        "🇸🇬 新加坡 (Singapore) 19 - tammader",
+        "🇸🇬 新加坡 (Singapore) 20 - tammader",
+        "🇸🇬 新加坡 (Singapore) 21 - tammader",
+        "🇸🇬 新加坡 (Singapore) 22 - tammader",
+        "🇸🇬 新加坡 (Singapore) 23 - tammader",
+        "🇸🇬 新加坡 (Singapore) 24 - tammader",
+        "🇸🇬 新加坡 (Singapore) 25 - tammader",
+        "🇸🇬 新加坡 (Singapore) 26 - tammader",
+        "🇸🇬 新加坡 (Singapore) 27 - tammader",
+        "🇸🇬 新加坡 (Singapore) 28 - tammader",
+        "🇸🇬 新加坡 (Singapore) 29 - tammader",
+        "🇸🇬 新加坡 (Singapore) 30 - tammader",
+        "🇸🇬 新加坡 (Singapore) 31 - tammader",
+        "🇸🇬 新加坡 (Singapore) 32 - tammader"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇸🇬 新加坡 (Singapore) 01 - tammader",
+        "🇸🇬 新加坡 (Singapore) 02 - tammader",
+        "🇸🇬 新加坡 (Singapore) 03 - tammader",
+        "🇸🇬 新加坡 (Singapore) 04 - tammader",
+        "🇸🇬 新加坡 (Singapore) 05 - tammader",
+        "🇸🇬 新加坡 (Singapore) 06 - tammader",
+        "🇸🇬 新加坡 (Singapore) 07 - tammader",
+        "🇸🇬 新加坡 (Singapore) 08 - tammader",
+        "🇸🇬 新加坡 (Singapore) 09 - tammader",
+        "🇸🇬 新加坡 (Singapore) 10 - tammader",
+        "🇸🇬 新加坡 (Singapore) 11 - tammader",
+        "🇸🇬 新加坡 (Singapore) 12 - tammader",
+        "🇸🇬 新加坡 (Singapore) 13 - tammader",
+        "🇸🇬 新加坡 (Singapore) 14 - tammader",
+        "🇸🇬 新加坡 (Singapore) 15 - tammader",
+        "🇸🇬 新加坡 (Singapore) 16 - tammader",
+        "🇸🇬 新加坡 (Singapore) 17 - tammader",
+        "🇸🇬 新加坡 (Singapore) 18 - tammader",
+        "🇸🇬 新加坡 (Singapore) 19 - tammader",
+        "🇸🇬 新加坡 (Singapore) 20 - tammader",
+        "🇸🇬 新加坡 (Singapore) 21 - tammader",
+        "🇸🇬 新加坡 (Singapore) 22 - tammader",
+        "🇸🇬 新加坡 (Singapore) 23 - tammader",
+        "🇸🇬 新加坡 (Singapore) 24 - tammader",
+        "🇸🇬 新加坡 (Singapore) 25 - tammader",
+        "🇸🇬 新加坡 (Singapore) 26 - tammader",
+        "🇸🇬 新加坡 (Singapore) 27 - tammader",
+        "🇸🇬 新加坡 (Singapore) 28 - tammader",
+        "🇸🇬 新加坡 (Singapore) 29 - tammader",
+        "🇸🇬 新加坡 (Singapore) 30 - tammader",
+        "🇸🇬 新加坡 (Singapore) 31 - tammader",
+        "🇸🇬 新加坡 (Singapore) 32 - tammader"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

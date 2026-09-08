@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇱🇻 LV 01 - tammader",
+        "🇱🇻 LV 02 - tammader",
+        "🇱🇻 LV 03 - tammader",
+        "🇱🇻 LV 04 - tammader",
+        "🇱🇻 LV 05 - tammader"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇱🇻 LV 01 - tammader",
+        "🇱🇻 LV 02 - tammader",
+        "🇱🇻 LV 03 - tammader",
+        "🇱🇻 LV 04 - tammader",
+        "🇱🇻 LV 05 - tammader"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

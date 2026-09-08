@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - tammader
   type: vless
-  server: 58.153.148.126
+  server: 826ff98e-tla000-tuklme-ueq.hk3.hyhuawei.com
   port: 443
-  uuid: 4729b4c8-1790-11eb-8684-f23c913c8d2b
+  uuid: 91df5a86-fcdd-11ef-94aa-f23c913c8d2b
   udp: true
   tls: true
   skip-cert-verify: true
@@ -16,29 +16,17 @@ proxies:
     public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
   servername: updates.cdn-apple.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - tammader
-  type: vmess
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16115
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - tammader
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - tammader
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - tammader
 rules:
 - MATCH,PROXIES

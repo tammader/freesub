@@ -6,19 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - tammader
   type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: ce55737c-243b-497f-9d9a-38700f327894
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 02 - tammader
-  type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -29,7 +17,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 03 - tammader
+- name: 🇦🇪 阿联酋 (UAE) 02 - tammader
   type: vless
   server: 185.112.249.201
   port: 8443
@@ -40,7 +28,7 @@ proxies:
   servername: web-socket.tgdaosheng.ggff.net
   network: ws
   ws-opts:
-    path: /proxyip=bpb.yousef.isegaro.comfp=chrome
+    path: /
     headers:
       Host: web-socket.tgdaosheng.ggff.net
 proxy-groups:
@@ -50,7 +38,6 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - tammader
   - 🇦🇪 阿联酋 (UAE) 02 - tammader
-  - 🇦🇪 阿联酋 (UAE) 03 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,6 +45,5 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - tammader
   - 🇦🇪 阿联酋 (UAE) 02 - tammader
-  - 🇦🇪 阿联酋 (UAE) 03 - tammader
 rules:
 - MATCH,PROXIES

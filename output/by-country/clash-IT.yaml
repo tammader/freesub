@@ -8,7 +8,7 @@ proxies:
   type: vless
   server: 57.131.32.191
   port: 80
-  uuid: 049e56d8-0ba0-49e3-b764-ee04122b9f00
+  uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
   udp: true
   tls: false
   skip-cert-verify: true
@@ -18,18 +18,12 @@ proxies:
     headers:
       Host: 57.131.32.191
 - name: 🇮🇹 意大利 (Italy) 02 - tammader
-  type: vless
-  server: 57.131.32.191
-  port: 80
-  uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
+  type: ss
+  server: 57.131.48.45
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-italy1.09vpn.com
 - name: 🇮🇹 意大利 (Italy) 03 - tammader
   type: vless
   server: 158.180.231.216
@@ -46,12 +40,17 @@ proxies:
       Host: bab-6.site
 - name: 🇮🇹 意大利 (Italy) 04 - tammader
   type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  server: 57.131.32.191
+  port: 80
+  uuid: 049e56d8-0ba0-49e3-b764-ee04122b9f00
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 57.131.32.191
 - name: 🇮🇹 意大利 (Italy) 05 - tammader
   type: vless
   server: 57.131.32.191
@@ -66,20 +65,6 @@ proxies:
     headers:
       Host: ov-italy1.09vpn.com
 - name: 🇮🇹 意大利 (Italy) 06 - tammader
-  type: ss
-  server: 57.131.48.45
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 07 - tammader
-  type: ss
-  server: 57.131.48.45
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 08 - tammader
   type: vless
   server: 57.131.32.191
   port: 80
@@ -91,8 +76,8 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: 57.131.32.191
-- name: 🇮🇹 意大利 (Italy) 09 - tammader
+      Host: ov-italy1.09vpn.com
+- name: 🇮🇹 意大利 (Italy) 07 - tammader
   type: vless
   server: 57.131.32.191
   port: 80
@@ -105,19 +90,13 @@ proxies:
     path: /vless/
     headers:
       Host: 57.131.32.191
-- name: 🇮🇹 意大利 (Italy) 10 - tammader
-  type: vless
-  server: 57.131.32.191
-  port: 80
-  uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
+- name: 🇮🇹 意大利 (Italy) 08 - tammader
+  type: ss
+  server: 57.131.48.45
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Italy1.09vpn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -131,8 +110,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 06 - tammader
   - 🇮🇹 意大利 (Italy) 07 - tammader
   - 🇮🇹 意大利 (Italy) 08 - tammader
-  - 🇮🇹 意大利 (Italy) 09 - tammader
-  - 🇮🇹 意大利 (Italy) 10 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -146,7 +123,5 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 06 - tammader
   - 🇮🇹 意大利 (Italy) 07 - tammader
   - 🇮🇹 意大利 (Italy) 08 - tammader
-  - 🇮🇹 意大利 (Italy) 09 - tammader
-  - 🇮🇹 意大利 (Italy) 10 - tammader
 rules:
 - MATCH,PROXIES

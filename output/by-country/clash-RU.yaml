@@ -6,90 +6,19 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - tammader
   type: vless
-  server: 162.159.0.169
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 45.9.15.206
+  port: 443
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ru05.abvpn.ru
   network: ws
   ws-opts:
-    path: /
+    path: /websocket
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: ru05.abvpn.ru
 - name: 🇷🇺 俄罗斯 (Russia) 02 - tammader
-  type: vless
-  server: 162.159.48.32
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 03 - tammader
-  type: vless
-  server: 108.162.198.178
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 04 - tammader
-  type: vless
-  server: 172.64.42.85
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 05 - tammader
-  type: vless
-  server: 104.18.47.113
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 06 - tammader
-  type: ss
-  server: 138.124.68.88
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: Y2ZlN
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 07 - tammader
-  type: vless
-  server: 104.21.70.21
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 08 - tammader
   type: vless
   server: 45.9.15.206
   port: 443
@@ -103,35 +32,14 @@ proxies:
     path: /websocket
     headers:
       Host: 45.9.15.206
-- name: 🇷🇺 俄罗斯 (Russia) 09 - tammader
-  type: vless
-  server: 45.9.15.206
-  port: 443
-  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+- name: 🇷🇺 俄罗斯 (Russia) 03 - tammader
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: /63vp7pdl1GXaTpa6kkWd2+3tq3/szSAWueVKo26xM8=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ru05.abvpn.ru
-  network: ws
-  ws-opts:
-    path: /websocket
-    headers:
-      Host: ru05.abvpn.ru
-- name: 🇷🇺 俄罗斯 (Russia) 10 - tammader
-  type: vless
-  server: ru05.abvpn.ru
-  port: 443
-  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ru05.abvpn.ru
-  network: ws
-  ws-opts:
-    path: /websocket
-    headers:
-      Host: ru05.abvpn.ru
-- name: 🇷🇺 俄罗斯 (Russia) 11 - tammader
+- name: 🇷🇺 俄罗斯 (Russia) 04 - tammader
   type: vless
   server: 46.8.200.91
   port: 443
@@ -145,35 +53,16 @@ proxies:
     path: /casc
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 12 - tammader
-  type: vless
-  server: 172.64.32.108
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+- name: 🇷🇺 俄罗斯 (Russia) 05 - tammader
+  type: ss
+  server: 138.124.68.88
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: Y2ZlN
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 13 - tammader
+- name: 🇷🇺 俄罗斯 (Russia) 06 - tammader
   type: vless
-  server: 104.18.47.113
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 14 - tammader
-  type: vless
-  server: 45.9.15.206
+  server: ru05.abvpn.ru
   port: 443
   uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
   udp: true
@@ -196,14 +85,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - tammader
   - 🇷🇺 俄罗斯 (Russia) 05 - tammader
   - 🇷🇺 俄罗斯 (Russia) 06 - tammader
-  - 🇷🇺 俄罗斯 (Russia) 07 - tammader
-  - 🇷🇺 俄罗斯 (Russia) 08 - tammader
-  - 🇷🇺 俄罗斯 (Russia) 09 - tammader
-  - 🇷🇺 俄罗斯 (Russia) 10 - tammader
-  - 🇷🇺 俄罗斯 (Russia) 11 - tammader
-  - 🇷🇺 俄罗斯 (Russia) 12 - tammader
-  - 🇷🇺 俄罗斯 (Russia) 13 - tammader
-  - 🇷🇺 俄罗斯 (Russia) 14 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -215,13 +96,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - tammader
   - 🇷🇺 俄罗斯 (Russia) 05 - tammader
   - 🇷🇺 俄罗斯 (Russia) 06 - tammader
-  - 🇷🇺 俄罗斯 (Russia) 07 - tammader
-  - 🇷🇺 俄罗斯 (Russia) 08 - tammader
-  - 🇷🇺 俄罗斯 (Russia) 09 - tammader
-  - 🇷🇺 俄罗斯 (Russia) 10 - tammader
-  - 🇷🇺 俄罗斯 (Russia) 11 - tammader
-  - 🇷🇺 俄罗斯 (Russia) 12 - tammader
-  - 🇷🇺 俄罗斯 (Russia) 13 - tammader
-  - 🇷🇺 俄罗斯 (Russia) 14 - tammader
 rules:
 - MATCH,PROXIES

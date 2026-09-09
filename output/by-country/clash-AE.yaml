@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - tammader
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -18,6 +18,39 @@ proxies:
     headers:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - tammader
+  type: ss
+  server: 188.208.110.58
+  port: 8444
+  cipher: chacha20-ietf-poly1305
+  password: tunnel-astrovpn_official
+  udp: true
+- name: 🇦🇪 阿联酋 (UAE) 03 - tammader
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - tammader
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - tammader
   type: vless
   server: 185.112.249.201
   port: 8443
@@ -31,6 +64,57 @@ proxies:
     path: /
     headers:
       Host: web-socket.tgdaosheng.ggff.net
+- name: 🇦🇪 阿联酋 (UAE) 06 - tammader
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 0817a3bb-c8fb-4ddf-a05e-321565b39cd8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 07 - tammader
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 08 - tammader
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 09 - tammader
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 7121d0be-40f5-4eda-b3d1-1556e71ea4fa
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: shrill-recipe-0c1d.404-a1d.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +122,13 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - tammader
   - 🇦🇪 阿联酋 (UAE) 02 - tammader
+  - 🇦🇪 阿联酋 (UAE) 03 - tammader
+  - 🇦🇪 阿联酋 (UAE) 04 - tammader
+  - 🇦🇪 阿联酋 (UAE) 05 - tammader
+  - 🇦🇪 阿联酋 (UAE) 06 - tammader
+  - 🇦🇪 阿联酋 (UAE) 07 - tammader
+  - 🇦🇪 阿联酋 (UAE) 08 - tammader
+  - 🇦🇪 阿联酋 (UAE) 09 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -45,5 +136,12 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - tammader
   - 🇦🇪 阿联酋 (UAE) 02 - tammader
+  - 🇦🇪 阿联酋 (UAE) 03 - tammader
+  - 🇦🇪 阿联酋 (UAE) 04 - tammader
+  - 🇦🇪 阿联酋 (UAE) 05 - tammader
+  - 🇦🇪 阿联酋 (UAE) 06 - tammader
+  - 🇦🇪 阿联酋 (UAE) 07 - tammader
+  - 🇦🇪 阿联酋 (UAE) 08 - tammader
+  - 🇦🇪 阿联酋 (UAE) 09 - tammader
 rules:
 - MATCH,PROXIES

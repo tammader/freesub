@@ -20,14 +20,14 @@ proxies:
   udp: true
 - name: 🇿🇦 ZA 03 - tammader
   type: ss
-  server: 20.164.211.25
-  port: 443
+  server: 139.84.247.164
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: BhYMkBpjAjE6ixSw
+  password: tfAcRikawhNoZAhu
   udp: true
 - name: 🇿🇦 ZA 04 - tammader
   type: ss
-  server: 20.164.43.105
+  server: 20.164.211.25
   port: 443
   cipher: chacha20-ietf-poly1305
   password: BhYMkBpjAjE6ixSw

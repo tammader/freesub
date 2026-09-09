@@ -6,16 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇲 AM 01 - tammader",
-        "🇦🇲 AM 02 - tammader"
+        "🇧🇷 BR 01 - tammader",
+        "🇧🇷 BR 02 - tammader",
+        "🇧🇷 BR 03 - tammader"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇲 AM 01 - tammader",
-        "🇦🇲 AM 02 - tammader"
+        "🇧🇷 BR 01 - tammader",
+        "🇧🇷 BR 02 - tammader",
+        "🇧🇷 BR 03 - tammader"
       ],
       "url": "https://www.google.com/generate_204"
     },

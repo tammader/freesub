@@ -16,16 +16,12 @@ proxies:
 - name: 🇧🇬 BG 02 - tammader
   type: vless
   server: 192.145.31.5
-  port: 443
+  port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 192.145.31.5
+  servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 03 - tammader
   type: vless
   server: 192.145.31.5
@@ -34,83 +30,8 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: neth9.lunariai.ru
+  servername: 192.145.31.5
 - name: 🇧🇬 BG 04 - tammader
-  type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 192.145.31.5
-- name: 🇧🇬 BG 05 - tammader
-  type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 06 - tammader
-  type: vless
-  server: 192.145.31.5
-  port: 443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 192.145.31.5
-- name: 🇧🇬 BG 07 - tammader
-  type: vless
-  server: 192.145.31.5
-  port: 443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 192.145.31.5
-- name: 🇧🇬 BG 08 - tammader
-  type: vless
-  server: 192.145.31.5
-  port: 443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: neth9.lunariai.ru
-- name: 🇧🇬 BG 09 - tammader
-  type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 192.145.31.5
-- name: 🇧🇬 BG 10 - tammader
-  type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 11 - tammader
   type: vless
   server: 192.145.31.5
   port: 8443
@@ -128,13 +49,6 @@ proxy-groups:
   - 🇧🇬 BG 02 - tammader
   - 🇧🇬 BG 03 - tammader
   - 🇧🇬 BG 04 - tammader
-  - 🇧🇬 BG 05 - tammader
-  - 🇧🇬 BG 06 - tammader
-  - 🇧🇬 BG 07 - tammader
-  - 🇧🇬 BG 08 - tammader
-  - 🇧🇬 BG 09 - tammader
-  - 🇧🇬 BG 10 - tammader
-  - 🇧🇬 BG 11 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -144,12 +58,5 @@ proxy-groups:
   - 🇧🇬 BG 02 - tammader
   - 🇧🇬 BG 03 - tammader
   - 🇧🇬 BG 04 - tammader
-  - 🇧🇬 BG 05 - tammader
-  - 🇧🇬 BG 06 - tammader
-  - 🇧🇬 BG 07 - tammader
-  - 🇧🇬 BG 08 - tammader
-  - 🇧🇬 BG 09 - tammader
-  - 🇧🇬 BG 10 - tammader
-  - 🇧🇬 BG 11 - tammader
 rules:
 - MATCH,PROXIES

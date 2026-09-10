@@ -27,44 +27,8 @@ proxies:
   reality-opts:
     public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 03 - tammader
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 50ddfd92-dc79-4777-a256-41e34d56836e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇮🇳 印度 (India) 04 - tammader
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 50ddfd92-dc79-4777-a256-41e34d56836e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
-  servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 05 - tammader
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 50ddfd92-dc79-4777-a256-41e34d56836e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 06 - tammader
+- name: 🇮🇳 印度 (India) 03 - tammader
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -76,10 +40,10 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
-- name: 🇮🇳 印度 (India) 07 - tammader
+- name: 🇮🇳 印度 (India) 04 - tammader
   type: ss
   server: 172.105.39.124
   port: 7002
@@ -95,9 +59,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - tammader
   - 🇮🇳 印度 (India) 03 - tammader
   - 🇮🇳 印度 (India) 04 - tammader
-  - 🇮🇳 印度 (India) 05 - tammader
-  - 🇮🇳 印度 (India) 06 - tammader
-  - 🇮🇳 印度 (India) 07 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -107,8 +68,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - tammader
   - 🇮🇳 印度 (India) 03 - tammader
   - 🇮🇳 印度 (India) 04 - tammader
-  - 🇮🇳 印度 (India) 05 - tammader
-  - 🇮🇳 印度 (India) 06 - tammader
-  - 🇮🇳 印度 (India) 07 - tammader
 rules:
 - MATCH,PROXIES

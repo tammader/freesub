@@ -13,28 +13,11 @@ proxies:
   udp: true
 - name: 🇪🇸 西班牙 (Spain) 02 - tammader
   type: ss
-  server: 64.177.32.29
-  port: 8388
-  cipher: aes-256-gcm
-  password: wBYiDjDDyFqcBnNl
-  udp: true
-- name: 🇪🇸 西班牙 (Spain) 03 - tammader
-  type: ss
   server: 108.181.121.226
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: WSyL4XTwNsdv
   udp: true
-- name: 🇪🇸 西班牙 (Spain) 04 - tammader
-  type: vmess
-  server: 85.90.217.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,8 +25,6 @@ proxy-groups:
   - AUTO
   - 🇪🇸 西班牙 (Spain) 01 - tammader
   - 🇪🇸 西班牙 (Spain) 02 - tammader
-  - 🇪🇸 西班牙 (Spain) 03 - tammader
-  - 🇪🇸 西班牙 (Spain) 04 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -51,7 +32,5 @@ proxy-groups:
   proxies:
   - 🇪🇸 西班牙 (Spain) 01 - tammader
   - 🇪🇸 西班牙 (Spain) 02 - tammader
-  - 🇪🇸 西班牙 (Spain) 03 - tammader
-  - 🇪🇸 西班牙 (Spain) 04 - tammader
 rules:
 - MATCH,PROXIES

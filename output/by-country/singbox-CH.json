@@ -6,20 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇻 LV 01 - tammader",
-        "🇱🇻 LV 02 - tammader",
-        "🇱🇻 LV 03 - tammader",
-        "🇱🇻 LV 04 - tammader"
+        "🇨🇭 CH 01 - tammader",
+        "🇨🇭 CH 02 - tammader"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 LV 01 - tammader",
-        "🇱🇻 LV 02 - tammader",
-        "🇱🇻 LV 03 - tammader",
-        "🇱🇻 LV 04 - tammader"
+        "🇨🇭 CH 01 - tammader",
+        "🇨🇭 CH 02 - tammader"
       ],
       "url": "https://www.google.com/generate_204"
     },

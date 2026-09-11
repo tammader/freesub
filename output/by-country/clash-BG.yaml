@@ -31,6 +31,15 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: neth9.lunariai.ru
+- name: 🇧🇬 BG 04 - tammader
+  type: vless
+  server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: neth9.lunariai.ru
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +48,7 @@ proxy-groups:
   - 🇧🇬 BG 01 - tammader
   - 🇧🇬 BG 02 - tammader
   - 🇧🇬 BG 03 - tammader
+  - 🇧🇬 BG 04 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -47,5 +57,6 @@ proxy-groups:
   - 🇧🇬 BG 01 - tammader
   - 🇧🇬 BG 02 - tammader
   - 🇧🇬 BG 03 - tammader
+  - 🇧🇬 BG 04 - tammader
 rules:
 - MATCH,PROXIES

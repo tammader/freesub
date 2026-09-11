@@ -6,24 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 - tammader",
-        "🇮🇳 印度 (India) 02 - tammader",
-        "🇮🇳 印度 (India) 03 - tammader",
-        "🇮🇳 印度 (India) 04 - tammader",
-        "🇮🇳 印度 (India) 05 - tammader",
-        "🇮🇳 印度 (India) 06 - tammader"
+        "🇮🇳 印度 (India) 01 - tammader"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 - tammader",
-        "🇮🇳 印度 (India) 02 - tammader",
-        "🇮🇳 印度 (India) 03 - tammader",
-        "🇮🇳 印度 (India) 04 - tammader",
-        "🇮🇳 印度 (India) 05 - tammader",
-        "🇮🇳 印度 (India) 06 - tammader"
+        "🇮🇳 印度 (India) 01 - tammader"
       ],
       "url": "https://www.google.com/generate_204"
     },

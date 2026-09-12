@@ -13,6 +13,19 @@ proxies:
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - tammader
   type: vless
+  server: 172.64.229.170
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 03 - tammader
+  type: vless
   server: 46.8.200.91
   port: 443
   uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
@@ -32,6 +45,7 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - tammader
   - 🇷🇺 俄罗斯 (Russia) 02 - tammader
+  - 🇷🇺 俄罗斯 (Russia) 03 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +53,6 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - tammader
   - 🇷🇺 俄罗斯 (Russia) 02 - tammader
+  - 🇷🇺 俄罗斯 (Russia) 03 - tammader
 rules:
 - MATCH,PROXIES

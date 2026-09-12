@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇺 HU 01 - tammader",
-        "🇭🇺 HU 02 - tammader"
+        "🇲🇽 MX 01 - tammader"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇺 HU 01 - tammader",
-        "🇭🇺 HU 02 - tammader"
+        "🇲🇽 MX 01 - tammader"
       ],
       "url": "https://www.google.com/generate_204"
     },

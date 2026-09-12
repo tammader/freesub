@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - tammader"
+        "🇸🇨 SC 01 - tammader",
+        "🇸🇨 SC 02 - tammader",
+        "🇸🇨 SC 03 - tammader"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - tammader"
+        "🇸🇨 SC 01 - tammader",
+        "🇸🇨 SC 02 - tammader",
+        "🇸🇨 SC 03 - tammader"
       ],
       "url": "https://www.google.com/generate_204"
     },

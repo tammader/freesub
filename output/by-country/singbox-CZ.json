@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 MY 01 - tammader",
-        "🇲🇾 MY 02 - tammader"
+        "🇨🇿 CZ 01 - tammader",
+        "🇨🇿 CZ 02 - tammader"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 MY 01 - tammader",
-        "🇲🇾 MY 02 - tammader"
+        "🇨🇿 CZ 01 - tammader",
+        "🇨🇿 CZ 02 - tammader"
       ],
       "url": "https://www.google.com/generate_204"
     },

@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇿 AZ 01 - tammader",
-        "🇦🇿 AZ 02 - tammader"
+        "🇰🇿 KZ 01 - tammader"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇿 AZ 01 - tammader",
-        "🇦🇿 AZ 02 - tammader"
+        "🇰🇿 KZ 01 - tammader"
       ],
       "url": "https://www.google.com/generate_204"
     },

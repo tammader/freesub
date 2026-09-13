@@ -19,32 +19,82 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - tammader
   type: vless
-  server: 104.17.169.13
-  port: 2053
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: inDeX.HaRMONiCA01.WORkers.DeV
-  network: ws
-  ws-opts:
-    path: /axch1mttbxz2k55y01
-    headers:
-      Host: inDeX.HaRMONiCA01.WORkers.DeV
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 03 - tammader
   type: vless
-  server: 211.48.30.184
-  port: 30017
-  uuid: beec57a5-8266-4279-b279-f495bdc70699
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - tammader
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - tammader
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - tammader
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - tammader
+  type: vless
+  server: 57.129.130.10
+  port: 52014
+  uuid: bca740c6-6704-48ba-99da-7d7a31768d73
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
   network: ws
   ws-opts:
     path: /@Marisa_kristi
     headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,6 +103,10 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - tammader
   - 🇦🇪 阿联酋 (UAE) 02 - tammader
   - 🇦🇪 阿联酋 (UAE) 03 - tammader
+  - 🇦🇪 阿联酋 (UAE) 04 - tammader
+  - 🇦🇪 阿联酋 (UAE) 05 - tammader
+  - 🇦🇪 阿联酋 (UAE) 06 - tammader
+  - 🇦🇪 阿联酋 (UAE) 07 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,5 +115,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - tammader
   - 🇦🇪 阿联酋 (UAE) 02 - tammader
   - 🇦🇪 阿联酋 (UAE) 03 - tammader
+  - 🇦🇪 阿联酋 (UAE) 04 - tammader
+  - 🇦🇪 阿联酋 (UAE) 05 - tammader
+  - 🇦🇪 阿联酋 (UAE) 06 - tammader
+  - 🇦🇪 阿联酋 (UAE) 07 - tammader
 rules:
 - MATCH,PROXIES

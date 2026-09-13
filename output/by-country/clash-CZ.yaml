@@ -6,21 +6,22 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - tammader
   type: vless
-  server: 172.64.32.108
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 172.64.153.235
+  port: 8443
+  uuid: 656bb400-3b7a-47e3-94b0-0362f3865072
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: socks5.revil-time3.workers.dev
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /socks5://128.140.46.169:13482
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: socks5.revil-time3.workers.dev
 - name: 🇨🇿 CZ 02 - tammader
   type: vless
-  server: 172.64.42.85
-  port: 2095
+  server: 172.64.229.2
+  port: 2052
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -30,6 +31,60 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇨🇿 CZ 03 - tammader
+  type: vless
+  server: 172.64.158.146
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇨🇿 CZ 04 - tammader
+  type: vless
+  server: 104.17.147.22
+  port: 443
+  uuid: 518de0d4-6ce8-4404-80db-23c4a8806128
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ez-5FAAFb.EsmAoi.wORKeRs.DEv
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiQkFLTnhqM2tZTSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: ez-5faafb.esmaoi.workers.dev
+- name: 🇨🇿 CZ 05 - tammader
+  type: vless
+  server: 162.159.24.131
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇨🇿 CZ 06 - tammader
+  type: vless
+  server: 45.130.125.126
+  port: 443
+  uuid: b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +92,10 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - tammader
   - 🇨🇿 CZ 02 - tammader
+  - 🇨🇿 CZ 03 - tammader
+  - 🇨🇿 CZ 04 - tammader
+  - 🇨🇿 CZ 05 - tammader
+  - 🇨🇿 CZ 06 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +103,9 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - tammader
   - 🇨🇿 CZ 02 - tammader
+  - 🇨🇿 CZ 03 - tammader
+  - 🇨🇿 CZ 04 - tammader
+  - 🇨🇿 CZ 05 - tammader
+  - 🇨🇿 CZ 06 - tammader
 rules:
 - MATCH,PROXIES

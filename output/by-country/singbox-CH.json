@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇭 CH 01 - tammader",
+        "🇨🇭 CH 02 - tammader",
+        "🇨🇭 CH 03 - tammader",
+        "🇨🇭 CH 04 - tammader"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇭 CH 01 - tammader",
+        "🇨🇭 CH 02 - tammader",
+        "🇨🇭 CH 03 - tammader",
+        "🇨🇭 CH 04 - tammader"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

@@ -6,20 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇿🇦 ZA 01 - tammader",
-        "🇿🇦 ZA 02 - tammader",
-        "🇿🇦 ZA 03 - tammader",
-        "🇿🇦 ZA 04 - tammader"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - tammader",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - tammader"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇿🇦 ZA 01 - tammader",
-        "🇿🇦 ZA 02 - tammader",
-        "🇿🇦 ZA 03 - tammader",
-        "🇿🇦 ZA 04 - tammader"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - tammader",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - tammader"
       ],
       "url": "https://www.google.com/generate_204"
     },

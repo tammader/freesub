@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇦 SA 01 - tammader",
-        "🇸🇦 SA 02 - tammader"
+        "🇸🇦 SA 01 - tammader"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇦 SA 01 - tammader",
-        "🇸🇦 SA 02 - tammader"
+        "🇸🇦 SA 01 - tammader"
       ],
       "url": "https://www.google.com/generate_204"
     },

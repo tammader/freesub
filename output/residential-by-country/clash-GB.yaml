@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇦 SA 01 - tammader
+- name: 🇬🇧 英国 (United Kingdom) 01 (家宽) - tammader
   type: vless
-  server: sa1.zuoai.cf
+  server: 162.159.153.4
   port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
     headers:
-      Host: nb.lovecf.ggff.net
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇦 SA 01 - tammader
+  - 🇬🇧 英国 (United Kingdom) 01 (家宽) - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇦 SA 01 - tammader
+  - 🇬🇧 英国 (United Kingdom) 01 (家宽) - tammader
 rules:
 - MATCH,PROXIES

@@ -13,17 +13,25 @@ proxies:
   udp: true
 - name: 🇹🇷 土耳其 (Turkey) 02 - tammader
   type: vless
-  server: max.karmatel.ir
-  port: 55519
-  uuid: a2b9a1b7-f12f-4503-a9f6-c78ec565a6bf
+  server: shop.neexbyte.ir
+  port: 8443
+  uuid: 464bc502-f963-45b6-81e3-e33d18427506
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: shop.neexbyte.ir
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: play-apps-features.googleusercontent.com
+      Host: shop.neexbyte.ir
+- name: 🇹🇷 土耳其 (Turkey) 03 - tammader
+  type: ss
+  server: 153.52.92.81
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: IXa3ylzS_jBOAsQy071tIQ
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +39,7 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - tammader
   - 🇹🇷 土耳其 (Turkey) 02 - tammader
+  - 🇹🇷 土耳其 (Turkey) 03 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -38,5 +47,6 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - tammader
   - 🇹🇷 土耳其 (Turkey) 02 - tammader
+  - 🇹🇷 土耳其 (Turkey) 03 - tammader
 rules:
 - MATCH,PROXIES

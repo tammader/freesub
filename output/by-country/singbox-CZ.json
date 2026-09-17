@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇿 CZ 01 - tammader",
+        "🇨🇿 CZ 02 - tammader",
+        "🇨🇿 CZ 03 - tammader",
+        "🇨🇿 CZ 04 - tammader",
+        "🇨🇿 CZ 05 - tammader",
+        "🇨🇿 CZ 06 - tammader",
+        "🇨🇿 CZ 07 - tammader",
+        "🇨🇿 CZ 08 - tammader",
+        "🇨🇿 CZ 09 - tammader",
+        "🇨🇿 CZ 10 - tammader"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇿 CZ 01 - tammader",
+        "🇨🇿 CZ 02 - tammader",
+        "🇨🇿 CZ 03 - tammader",
+        "🇨🇿 CZ 04 - tammader",
+        "🇨🇿 CZ 05 - tammader",
+        "🇨🇿 CZ 06 - tammader",
+        "🇨🇿 CZ 07 - tammader",
+        "🇨🇿 CZ 08 - tammader",
+        "🇨🇿 CZ 09 - tammader",
+        "🇨🇿 CZ 10 - tammader"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

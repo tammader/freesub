@@ -12,6 +12,14 @@ proxies:
   password: itzvpn@321
   udp: true
 - name: 🇮🇹 意大利 (Italy) 02 - tammader
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 03 - tammader
   type: ss
   server: 185.164.175.81
   port: 19999
@@ -25,6 +33,7 @@ proxy-groups:
   - AUTO
   - 🇮🇹 意大利 (Italy) 01 - tammader
   - 🇮🇹 意大利 (Italy) 02 - tammader
+  - 🇮🇹 意大利 (Italy) 03 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -32,5 +41,6 @@ proxy-groups:
   proxies:
   - 🇮🇹 意大利 (Italy) 01 - tammader
   - 🇮🇹 意大利 (Italy) 02 - tammader
+  - 🇮🇹 意大利 (Italy) 03 - tammader
 rules:
 - MATCH,PROXIES

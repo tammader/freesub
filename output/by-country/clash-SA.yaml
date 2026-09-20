@@ -20,7 +20,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 02 - tammader
   type: vless
-  server: 91.209.253.119
+  server: 91.209.253.68
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -29,10 +29,66 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 03 - tammader
+  type: vless
+  server: 91.209.253.244
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 04 - tammader
+  type: vless
+  server: 91.209.253.229
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 05 - tammader
+  type: vless
+  server: 91.209.253.229
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 06 - tammader
+  type: vless
+  server: 91.209.253.25
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 07 - tammader
   type: vless
   server: 91.209.253.68
   port: 443
@@ -46,7 +102,7 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 04 - tammader
+- name: 🇸🇦 SA 08 - tammader
   type: vless
   server: 91.209.253.109
   port: 443
@@ -60,7 +116,7 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 05 - tammader
+- name: 🇸🇦 SA 09 - tammader
   type: vless
   server: 91.209.253.119
   port: 443
@@ -71,7 +127,7 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
     headers:
       Host: nb.lovecf.ggff.net
 proxy-groups:
@@ -84,6 +140,10 @@ proxy-groups:
   - 🇸🇦 SA 03 - tammader
   - 🇸🇦 SA 04 - tammader
   - 🇸🇦 SA 05 - tammader
+  - 🇸🇦 SA 06 - tammader
+  - 🇸🇦 SA 07 - tammader
+  - 🇸🇦 SA 08 - tammader
+  - 🇸🇦 SA 09 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,5 +154,9 @@ proxy-groups:
   - 🇸🇦 SA 03 - tammader
   - 🇸🇦 SA 04 - tammader
   - 🇸🇦 SA 05 - tammader
+  - 🇸🇦 SA 06 - tammader
+  - 🇸🇦 SA 07 - tammader
+  - 🇸🇦 SA 08 - tammader
+  - 🇸🇦 SA 09 - tammader
 rules:
 - MATCH,PROXIES

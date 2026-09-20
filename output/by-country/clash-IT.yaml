@@ -13,13 +13,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 02 - tammader
-  type: ss
-  server: 57.131.48.45
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 03 - tammader
   type: vless
   server: 204.216.216.23
   port: 10086
@@ -27,6 +20,13 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 03 - tammader
+  type: ss
+  server: 57.131.48.45
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
 - name: 🇮🇹 意大利 (Italy) 04 - tammader
   type: ss
   server: 185.164.175.81

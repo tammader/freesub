@@ -6,14 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 CZ 01 - tammader"
+        "🇨🇿 CZ 01 - tammader",
+        "🇨🇿 CZ 02 - tammader",
+        "🇨🇿 CZ 03 - tammader",
+        "🇨🇿 CZ 04 - tammader",
+        "🇨🇿 CZ 05 - tammader",
+        "🇨🇿 CZ 06 - tammader"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ 01 - tammader"
+        "🇨🇿 CZ 01 - tammader",
+        "🇨🇿 CZ 02 - tammader",
+        "🇨🇿 CZ 03 - tammader",
+        "🇨🇿 CZ 04 - tammader",
+        "🇨🇿 CZ 05 - tammader",
+        "🇨🇿 CZ 06 - tammader"
       ],
       "url": "https://www.google.com/generate_204"
     },

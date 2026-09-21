@@ -5,22 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - tammader
-  type: vmess
-  server: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
-  port: 443
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - tammader
   type: vless
   server: 60.248.219.53
   port: 443
@@ -33,40 +17,24 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: ty986gfazs.cainiaohub.xyz
+      Host: 60.248.219.53
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - tammader
+  type: vmess
+  server: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - tammader
-  type: vmess
-  server: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
-  port: 443
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - tammader
-  type: vmess
-  server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
-  port: 443
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - tammader
   type: vless
   server: 118.167.246.43
   port: 24215
@@ -77,7 +45,23 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - tammader
+  type: vmess
+  server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
 proxy-groups:
 - name: PROXIES
   type: select
@@ -87,7 +71,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - tammader
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - tammader
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - tammader
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -97,6 +80,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - tammader
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - tammader
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - tammader
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - tammader
 rules:
 - MATCH,PROXIES

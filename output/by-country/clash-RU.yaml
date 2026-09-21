@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - tammader
   type: vless
-  server: 193.181.216.117
+  server: 138.68.142.165
   port: 2053
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
@@ -15,51 +15,23 @@ proxies:
   servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /resource/channel
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇷🇺 俄罗斯 (Russia) 02 - tammader
   type: vless
-  server: 185.113.223.183
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 46.8.200.91
+  port: 443
+  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: cf3.rumedia-cdn.com
   network: ws
   ws-opts:
-    path: /channels/act
+    path: /cdn/v3/live
     headers:
-      Host: cdn8848.776676.xyz
-- name: 🇷🇺 俄罗斯 (Russia) 03 - tammader
-  type: vless
-  server: 132.243.203.243
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: '%2Farchive%3Fed%3D2560'
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇷🇺 俄罗斯 (Russia) 04 - tammader
-  type: vless
-  server: 45.38.139.23
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: '%2Fjumping%2Fclass%2Fbt%3Fed%3D2560'
-    headers:
-      Host: cdn8848.776676.xyz
+      Host: cf3.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,8 +39,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - tammader
   - 🇷🇺 俄罗斯 (Russia) 02 - tammader
-  - 🇷🇺 俄罗斯 (Russia) 03 - tammader
-  - 🇷🇺 俄罗斯 (Russia) 04 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,7 +46,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - tammader
   - 🇷🇺 俄罗斯 (Russia) 02 - tammader
-  - 🇷🇺 俄罗斯 (Russia) 03 - tammader
-  - 🇷🇺 俄罗斯 (Russia) 04 - tammader
 rules:
 - MATCH,PROXIES

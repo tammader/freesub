@@ -6,71 +6,6 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - tammader
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 02 - tammader
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 03 - tammader
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 04 - tammader
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - tammader
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - tammader
-  type: vless
   server: 157.228.142.148
   port: 8443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -83,21 +18,44 @@ proxies:
     path: '%2Fact%2Frank%2Flang%3Fed%3D2560'
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇦🇪 阿联酋 (UAE) 07 - tammader
+- name: 🇦🇪 阿联酋 (UAE) 02 - tammader
   type: vless
-  server: 188.72.103.4
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 03 - tammader
+  type: vless
+  server: 89.125.147.199
   port: 443
-  uuid: 1f959100-a98b-47fb-84fa-359246dc458a
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: apicdn.4subnodes.com
-  network: ws
-  ws-opts:
-    path: /apiv1/esa1-asda2jcvnbpseflkn-kjweksad
-    headers:
-      Host: apicdn.4subnodes.com
-- name: 🇦🇪 阿联酋 (UAE) 08 - tammader
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 04 - tammader
+  type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 05 - tammader
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -110,6 +68,42 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - tammader
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 39c11784-818b-4e2c-8804-8181abc9c849
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 07 - tammader
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 4e32f662-01da-4dad-bf33-ee17f578d118
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 08 - tammader
+  type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: random
 - name: 🇦🇪 阿联酋 (UAE) 09 - tammader
   type: vless
   server: uae.unixzone.us
@@ -123,18 +117,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 10 - tammader
-  type: vless
-  server: 89.125.147.199
-  port: 443
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-  servername: maps.apple.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -149,7 +131,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 07 - tammader
   - 🇦🇪 阿联酋 (UAE) 08 - tammader
   - 🇦🇪 阿联酋 (UAE) 09 - tammader
-  - 🇦🇪 阿联酋 (UAE) 10 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -164,6 +145,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 07 - tammader
   - 🇦🇪 阿联酋 (UAE) 08 - tammader
   - 🇦🇪 阿联酋 (UAE) 09 - tammader
-  - 🇦🇪 阿联酋 (UAE) 10 - tammader
 rules:
 - MATCH,PROXIES

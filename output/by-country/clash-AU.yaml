@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: safari
 - name: 🇦🇺 澳大利亚 (Australia) 02 - tammader
   type: vless
   server: 34.87.244.111
@@ -30,28 +30,28 @@ proxies:
   client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 03 - tammader
   type: vless
-  server: 34.87.244.111
+  server: 34.87.229.148
   port: 443
-  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 04 - tammader
   type: vless
-  server: 34.87.244.111
+  server: 34.87.229.148
   port: 443
-  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 05 - tammader
   type: vless
   server: 34.87.244.111
@@ -66,26 +66,26 @@ proxies:
   client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 06 - tammader
   type: vless
-  server: 34.87.229.148
+  server: 34.87.244.111
   port: 443
-  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇦🇺 澳大利亚 (Australia) 07 - tammader
   type: vless
-  server: 34.87.229.148
+  server: 34.87.244.111
   port: 443
-  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 08 - tammader
@@ -102,6 +102,15 @@ proxies:
   client-fingerprint: random
 - name: 🇦🇺 澳大利亚 (Australia) 09 - tammader
   type: vless
+  server: 172.105.169.70
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 172.105.169.70
+- name: 🇦🇺 澳大利亚 (Australia) 10 - tammader
+  type: vless
   server: 34.87.244.111
   port: 443
   uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
@@ -110,6 +119,18 @@ proxies:
   skip-cert-verify: true
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 (Australia) 11 - tammader
+  type: vless
+  server: 34.87.229.148
+  port: 443
+  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
   servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
@@ -126,6 +147,8 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 07 - tammader
   - 🇦🇺 澳大利亚 (Australia) 08 - tammader
   - 🇦🇺 澳大利亚 (Australia) 09 - tammader
+  - 🇦🇺 澳大利亚 (Australia) 10 - tammader
+  - 🇦🇺 澳大利亚 (Australia) 11 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -140,5 +163,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 07 - tammader
   - 🇦🇺 澳大利亚 (Australia) 08 - tammader
   - 🇦🇺 澳大利亚 (Australia) 09 - tammader
+  - 🇦🇺 澳大利亚 (Australia) 10 - tammader
+  - 🇦🇺 澳大利亚 (Australia) 11 - tammader
 rules:
 - MATCH,PROXIES

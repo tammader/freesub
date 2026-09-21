@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01 - tammader"
+        "🇪🇸 西班牙 (Spain) 01 - tammader",
+        "🇪🇸 西班牙 (Spain) 02 - tammader"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01 - tammader"
+        "🇪🇸 西班牙 (Spain) 01 - tammader",
+        "🇪🇸 西班牙 (Spain) 02 - tammader"
       ],
       "url": "https://www.google.com/generate_204"
     },

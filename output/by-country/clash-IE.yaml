@@ -4,9 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇭 CH 01 - tammader
+- name: 🇮🇪 IE 01 - tammader
   type: vless
-  server: 107.189.2.206
+  server: 107.150.20.112
   port: 8443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
@@ -18,33 +18,33 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇨🇭 CH 02 - tammader
+- name: 🇮🇪 IE 02 - tammader
   type: vless
-  server: 199.232.249.220
-  port: 443
-  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
+  server: 198.55.102.68
+  port: 2083
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: global.fastly.com
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: sardach3.global.ssl.fastly.net
+      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇭 CH 01 - tammader
-  - 🇨🇭 CH 02 - tammader
+  - 🇮🇪 IE 01 - tammader
+  - 🇮🇪 IE 02 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇭 CH 01 - tammader
-  - 🇨🇭 CH 02 - tammader
+  - 🇮🇪 IE 01 - tammader
+  - 🇮🇪 IE 02 - tammader
 rules:
 - MATCH,PROXIES

@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - tammader
   type: vless
-  server: 212.104.128.217
+  server: 212.104.128.0
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -29,50 +29,10 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
     headers:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 03 - tammader
-  type: vless
-  server: 212.104.128.206
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 04 - tammader
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: random
-- name: 🇫🇮 FI 05 - tammader
-  type: vless
-  server: 212.104.128.152
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 06 - tammader
   type: vless
   server: a2.arshia-nova.ir
   port: 443
@@ -86,168 +46,7 @@ proxies:
     path: /
     headers:
       Host: c12.com
-- name: 🇫🇮 FI 07 - tammader
-  type: vless
-  server: 212.104.128.45
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 08 - tammader
-  type: vless
-  server: 212.104.128.139
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 09 - tammader
-  type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 10 - tammader
-  type: ss
-  server: 87.58.148.70
-  port: 443
-  cipher: aes-256-gcm
-  password: rg0g3xp9rk9nk9o0
-  udp: true
-- name: 🇫🇮 FI 11 - tammader
-  type: vless
-  server: 212.104.128.106
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 12 - tammader
-  type: vless
-  server: 212.104.128.45
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 13 - tammader
-  type: vless
-  server: 212.104.128.244
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 14 - tammader
-  type: vless
-  server: 212.104.128.217
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 15 - tammader
-  type: vless
-  server: 212.104.128.106
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 16 - tammader
-  type: vless
-  server: 212.104.128.0
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 17 - tammader
-  type: vless
-  server: 212.104.128.152
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 18 - tammader
-  type: vless
-  server: 212.104.128.0
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 19 - tammader
+- name: 🇫🇮 FI 04 - tammader
   type: vless
   server: 212.104.128.68
   port: 443
@@ -261,7 +60,91 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 20 - tammader
+- name: 🇫🇮 FI 05 - tammader
+  type: vless
+  server: 212.104.128.68
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 06 - tammader
+  type: vless
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 07 - tammader
+  type: vless
+  server: 212.104.128.217
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 08 - tammader
+  type: vless
+  server: 212.104.128.106
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 09 - tammader
+  type: vless
+  server: 212.104.128.152
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 10 - tammader
+  type: vless
+  server: 212.104.128.45
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 11 - tammader
   type: vless
   server: 212.104.128.139
   port: 443
@@ -275,6 +158,130 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 12 - tammader
+  type: vless
+  server: 212.104.128.27
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 13 - tammader
+  type: vless
+  server: 212.104.128.106
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 14 - tammader
+  type: vless
+  server: 212.104.128.244
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 15 - tammader
+  type: vless
+  server: 212.104.128.206
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 16 - tammader
+  type: vless
+  server: 212.104.128.139
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 17 - tammader
+  type: vless
+  server: 212.104.128.45
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 18 - tammader
+  type: vless
+  server: 31.76.80.230
+  port: 8443
+  uuid: d544c858-b1ba-45b2-8868-8197daf2a6ee
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fin.luxes.network
+  network: ws
+  ws-opts:
+    path: /assets
+    headers:
+      Host: 31.76.80.230
+- name: 🇫🇮 FI 19 - tammader
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: random
+- name: 🇫🇮 FI 20 - tammader
+  type: vless
+  server: 151.101.56.7
+  port: 443
+  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: global.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kayko.global.ssl.fastly.net
 - name: 🇫🇮 FI 21 - tammader
   type: vless
   server: 212.104.128.45
@@ -291,7 +298,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 22 - tammader
   type: vless
-  server: 212.104.128.68
+  server: 212.104.128.217
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -305,47 +312,19 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 23 - tammader
   type: vless
-  server: 212.104.128.206
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  server: 172.64.53.60
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: ?ed=2560
     headers:
-      Host: xi.tbv.ccwu.cc
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇫🇮 FI 24 - tammader
-  type: vless
-  server: 212.104.128.27
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 25 - tammader
-  type: vless
-  server: 212.104.128.27
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 26 - tammader
   type: vless
   server: 212.104.128.244
   port: 443
@@ -359,6 +338,102 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 25 - tammader
+  type: vless
+  server: 212.104.128.206
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 26 - tammader
+  type: vless
+  server: 212.104.128.27
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 27 - tammader
+  type: vless
+  server: 212.104.128.0
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 28 - tammader
+  type: vless
+  server: 212.104.128.27
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 29 - tammader
+  type: vless
+  server: 212.104.128.68
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 30 - tammader
+  type: vless
+  server: 212.104.128.152
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 31 - tammader
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -390,6 +465,11 @@ proxy-groups:
   - 🇫🇮 FI 24 - tammader
   - 🇫🇮 FI 25 - tammader
   - 🇫🇮 FI 26 - tammader
+  - 🇫🇮 FI 27 - tammader
+  - 🇫🇮 FI 28 - tammader
+  - 🇫🇮 FI 29 - tammader
+  - 🇫🇮 FI 30 - tammader
+  - 🇫🇮 FI 31 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -421,5 +501,10 @@ proxy-groups:
   - 🇫🇮 FI 24 - tammader
   - 🇫🇮 FI 25 - tammader
   - 🇫🇮 FI 26 - tammader
+  - 🇫🇮 FI 27 - tammader
+  - 🇫🇮 FI 28 - tammader
+  - 🇫🇮 FI 29 - tammader
+  - 🇫🇮 FI 30 - tammader
+  - 🇫🇮 FI 31 - tammader
 rules:
 - MATCH,PROXIES

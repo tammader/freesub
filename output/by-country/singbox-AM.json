@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇲 AM 01 - tammader",
-        "🇦🇲 AM 02 - tammader"
+        "🇦🇲 AM 01 - tammader"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇲 AM 01 - tammader",
-        "🇦🇲 AM 02 - tammader"
+        "🇦🇲 AM 01 - tammader"
       ],
       "url": "https://www.google.com/generate_204"
     },

@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇦 加拿大 (Canada) 01 (家宽) - tammader"
+        "🇲🇩 MD 01 - tammader",
+        "🇲🇩 MD 02 - tammader",
+        "🇲🇩 MD 03 - tammader",
+        "🇲🇩 MD 04 - tammader"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇦 加拿大 (Canada) 01 (家宽) - tammader"
+        "🇲🇩 MD 01 - tammader",
+        "🇲🇩 MD 02 - tammader",
+        "🇲🇩 MD 03 - tammader",
+        "🇲🇩 MD 04 - tammader"
       ],
       "url": "https://www.google.com/generate_204"
     },

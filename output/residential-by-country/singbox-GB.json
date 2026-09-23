@@ -6,20 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 EE 01 - tammader",
-        "🇪🇪 EE 02 - tammader",
-        "🇪🇪 EE 03 - tammader",
-        "🇪🇪 EE 04 - tammader"
+        "🇬🇧 英国 (United Kingdom) 01 (家宽) - tammader"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 EE 01 - tammader",
-        "🇪🇪 EE 02 - tammader",
-        "🇪🇪 EE 03 - tammader",
-        "🇪🇪 EE 04 - tammader"
+        "🇬🇧 英国 (United Kingdom) 01 (家宽) - tammader"
       ],
       "url": "https://www.google.com/generate_204"
     },

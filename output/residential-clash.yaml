@@ -4,65 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - tammader
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 645ea5d2-7d0a-4d66-940d-eefc2b84f4e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fragrant-surf-4797.496-345.workers.dev
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: fragrant-surf-4797.496-345.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - tammader
-  type: vless
-  server: 172.64.53.60
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: ?ed=2560
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - tammader
-  type: vmess
-  server: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
-  port: 443
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
-- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - tammader
-  type: vless
-  server: 104.16.150.108
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - tammader
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - tammader
   type: vless
   server: 60.248.219.54
   port: 443
@@ -76,57 +18,76 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇰🇷 韩国 (South Korea) 06 (家宽) - tammader
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - tammader
   type: vless
-  server: 172.67.217.240
-  port: 443
+  server: 104.16.150.108
+  port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
     path: /?ed=2560
     headers:
-      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
-- name: 🇬🇧 英国 (United Kingdom) 07 (家宽) - tammader
-  type: vless
-  server: 162.159.152.4
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - tammader
+  type: vmess
+  server: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
   port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  servername: ''
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: ''
     headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
+      Host: ''
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - tammader
+  type: ss
+  server: 36.224.141.124
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - tammader
+  type: vless
+  server: 104.18.38.47
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: ?ed=2560
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - tammader
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - tammader
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - tammader
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - tammader
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - tammader
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - tammader
-  - 🇰🇷 韩国 (South Korea) 06 (家宽) - tammader
-  - 🇬🇧 英国 (United Kingdom) 07 (家宽) - tammader
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - tammader
+  - 🇰🇷 韩国 (South Korea) 05 (家宽) - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - tammader
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - tammader
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - tammader
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - tammader
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - tammader
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - tammader
-  - 🇰🇷 韩国 (South Korea) 06 (家宽) - tammader
-  - 🇬🇧 英国 (United Kingdom) 07 (家宽) - tammader
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - tammader
+  - 🇰🇷 韩国 (South Korea) 05 (家宽) - tammader
 rules:
 - MATCH,PROXIES

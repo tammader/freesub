@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - tammader"
+        "🇲🇾 MY 01 - tammader",
+        "🇲🇾 MY 02 - tammader",
+        "🇲🇾 MY 03 - tammader"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - tammader"
+        "🇲🇾 MY 01 - tammader",
+        "🇲🇾 MY 02 - tammader",
+        "🇲🇾 MY 03 - tammader"
       ],
       "url": "https://www.google.com/generate_204"
     },

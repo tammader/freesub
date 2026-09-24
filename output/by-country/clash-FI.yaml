@@ -8,33 +8,19 @@ proxies:
   type: vless
   server: 151.101.56.6
   port: 443
-  uuid: 622cd467-ae00-4afe-b7ee-15dca6b9649a
+  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
   udp: true
   tls: true
   skip-cert-verify: true
   servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPNfp=chrome
+    path: /?
     headers:
       Host: c12.com
 - name: 🇫🇮 FI 02 - tammader
   type: vless
-  server: 151.101.56.7
-  port: 443
-  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: global.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kayko.global.ssl.fastly.net
-- name: 🇫🇮 FI 03 - tammader
-  type: vless
-  server: k2.cloud--vpn.site
+  server: 151.101.56.6
   port: 443
   uuid: 622cd467-ae00-4afe-b7ee-15dca6b9649a
   udp: true
@@ -46,7 +32,7 @@ proxies:
     path: /
     headers:
       Host: c12.com
-- name: 🇫🇮 FI 04 - tammader
+- name: 🇫🇮 FI 03 - tammader
   type: vless
   server: 185.79.138.71
   port: 448
@@ -66,7 +52,6 @@ proxy-groups:
   - 🇫🇮 FI 01 - tammader
   - 🇫🇮 FI 02 - tammader
   - 🇫🇮 FI 03 - tammader
-  - 🇫🇮 FI 04 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,6 +60,5 @@ proxy-groups:
   - 🇫🇮 FI 01 - tammader
   - 🇫🇮 FI 02 - tammader
   - 🇫🇮 FI 03 - tammader
-  - 🇫🇮 FI 04 - tammader
 rules:
 - MATCH,PROXIES

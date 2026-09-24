@@ -6,40 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 02 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 03 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 04 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 05 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 06 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 07 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 08 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 09 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 10 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 11 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 12 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 13 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 14 - tammader"
+        "🇦🇺 澳大利亚 (Australia) 01 - tammader"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 02 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 03 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 04 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 05 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 06 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 07 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 08 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 09 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 10 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 11 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 12 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 13 - tammader",
-        "🇦🇺 澳大利亚 (Australia) 14 - tammader"
+        "🇦🇺 澳大利亚 (Australia) 01 - tammader"
       ],
       "url": "https://www.google.com/generate_204"
     },

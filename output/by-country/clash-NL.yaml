@@ -6,19 +6,33 @@ log-level: info
 proxies:
 - name: 🇳🇱 荷兰 (Netherlands) 01 - tammader
   type: ss
+  server: 141.148.239.199
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: GpjRf5YrJgdk/JESBf3HdJ2Klr7+QA6a9K76+2WuKf8=
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 02 - tammader
+  type: ss
   server: 158.173.20.208
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 02 - tammader
+- name: 🇳🇱 荷兰 (Netherlands) 03 - tammader
   type: ss
-  server: 193.29.139.168
+  server: 193.29.139.225
   port: 8080
   cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 03 - tammader
+- name: 🇳🇱 荷兰 (Netherlands) 04 - tammader
+  type: ss
+  server: 82.38.31.155
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 05 - tammader
   type: vmess
   server: 159.223.13.109
   port: 1234
@@ -29,182 +43,232 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇳🇱 荷兰 (Netherlands) 04 - tammader
+- name: 🇳🇱 荷兰 (Netherlands) 06 - tammader
   type: vless
-  server: sfghfdh75-production.up.railway.app
+  server: 2.27.205.59
   port: 443
-  uuid: 3515991a-d6cd-4c93-a1c1-d39a77aad058
+  uuid: c21631d5-36c9-4664-b575-97eca17456be
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: sfghfdh75-production.up.railway.app
   network: ws
   ws-opts:
-    path: /ws/3515991a-d6cd-4c93-a1c1-d39a77aad058
+    path: /
     headers:
-      Host: sfghfdh75-production.up.railway.app
-- name: 🇳🇱 荷兰 (Netherlands) 05 - tammader
-  type: ss
-  server: 82.38.31.39
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 06 - tammader
-  type: ss
-  server: 82.38.31.66
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
+      Host: neth8.lunariai.ru
 - name: 🇳🇱 荷兰 (Netherlands) 07 - tammader
   type: ss
-  server: 193.29.139.225
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  server: 84.235.176.159
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: xoiE65wltS1tHSEMl5+KCYozC9gjghh3Gxx+pIGwoBE=
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 08 - tammader
   type: ss
-  server: 82.38.31.46
+  server: 82.38.31.69
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 09 - tammader
-  type: ss
-  server: 82.38.31.174
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  type: vmess
+  server: 159.223.13.109
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 🇳🇱 荷兰 (Netherlands) 10 - tammader
   type: ss
-  server: 82.38.31.10
+  server: 193.29.139.197
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 11 - tammader
   type: ss
-  server: 82.38.31.9
-  port: 8080
+  server: 82.38.31.175
+  port: 443
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 12 - tammader
   type: ss
-  server: 82.38.31.13
+  server: 193.29.139.212
   port: 8080
   cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  password: QCXDxuDlTTMD7jtgHUjIoj
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 13 - tammader
-  type: ss
-  server: 193.29.139.198
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  type: vless
+  server: 141.148.225.181
+  port: 62145
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇳🇱 荷兰 (Netherlands) 14 - tammader
   type: ss
-  server: 82.38.31.34
+  server: 82.38.31.16
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 15 - tammader
   type: ss
-  server: 82.38.31.212
+  server: 193.29.139.188
   port: 8080
   cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 16 - tammader
   type: ss
-  server: 193.29.139.147
+  server: 193.29.139.179
   port: 8080
   cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 17 - tammader
-  type: ss
-  server: 82.38.31.198
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 18 - tammader
-  type: ss
-  server: 193.29.139.151
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 19 - tammader
-  type: ss
-  server: 82.38.31.42
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 20 - tammader
-  type: ss
-  server: 82.38.31.28
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 21 - tammader
-  type: ss
-  server: 82.38.31.61
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 22 - tammader
   type: ss
   server: 82.38.31.3
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 18 - tammader
+  type: ss
+  server: 82.38.31.42
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 19 - tammader
+  type: ss
+  server: 82.38.31.9
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 20 - tammader
+  type: ss
+  server: 82.38.31.183
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 21 - tammader
+  type: ss
+  server: 82.38.31.218
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 22 - tammader
+  type: ss
+  server: 193.29.139.132
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 23 - tammader
+  type: ss
+  server: 82.38.31.198
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 24 - tammader
   type: ss
   server: 82.38.31.162
   port: 443
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 24 - tammader
-  type: ss
-  server: 141.148.239.199
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: GpjRf5YrJgdk/JESBf3HdJ2Klr7+QA6a9K76+2WuKf8=
-  udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 25 - tammader
-  type: vless
-  server: sfghfdh75-production.up.railway.app
-  port: 443
-  uuid: 3515991a-d6cd-4c93-a1c1-d39a77aad058
+  type: ss
+  server: 82.38.31.47
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sfghfdh75-production.up.railway.app
-  network: ws
-  ws-opts:
-    path: /ws/3515991a-d6cd-4c93-a1c1-d39a77aad058
-    headers:
-      Host: sfghfdh75-production.up.railway.app
 - name: 🇳🇱 荷兰 (Netherlands) 26 - tammader
   type: ss
-  server: 82.38.31.62
+  server: 82.38.31.48
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 27 - tammader
+  type: ss
+  server: 82.38.31.61
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 28 - tammader
+  type: ss
+  server: 108.181.58.239
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: CJmTCCx7Ltud
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 29 - tammader
+  type: ss
+  server: 193.29.139.151
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 30 - tammader
+  type: ss
+  server: 82.38.31.34
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 31 - tammader
+  type: ss
+  server: 82.38.31.149
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 32 - tammader
+  type: vless
+  server: victoryprovpn-production-f93a.up.railway.app
+  port: 443
+  uuid: 9198f982-ef72-5da8-c1fb-6ae60c6abf53
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: victoryprovpn-production-f93a.up.railway.app
+  network: ws
+  ws-opts:
+    path: /ws/9198f982-ef72-5da8-c1fb-6ae60c6abf53
+    headers:
+      Host: victoryprovpn-production-f93a.up.railway.app
+- name: 🇳🇱 荷兰 (Netherlands) 33 - tammader
+  type: vmess
+  server: 45.90.106.24
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇳🇱 荷兰 (Netherlands) 34 - tammader
+  type: ss
+  server: 82.38.31.192
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 35 - tammader
   type: vless
   server: 85.17.145.65
   port: 12068
@@ -217,248 +281,96 @@ proxies:
     path: /
     headers:
       Host: mypanel.unixzone.us
-- name: 🇳🇱 荷兰 (Netherlands) 28 - tammader
-  type: ss
-  server: 82.38.31.208
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 29 - tammader
-  type: vless
-  server: 141.148.225.181
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇳🇱 荷兰 (Netherlands) 30 - tammader
-  type: ss
-  server: 108.181.58.239
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: CJmTCCx7Ltud
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 31 - tammader
-  type: ss
-  server: 193.29.139.188
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 32 - tammader
-  type: ss
-  server: 82.38.31.193
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 33 - tammader
-  type: ss
-  server: 82.38.31.7
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 34 - tammader
-  type: ss
-  server: 82.38.31.26
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 35 - tammader
-  type: ss
-  server: 82.38.31.82
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 36 - tammader
   type: ss
-  server: 193.29.139.179
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  server: 146.190.236.129
+  port: 17000
+  cipher: aes-256-gcm
+  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 37 - tammader
-  type: vless
-  server: 2.27.205.59
-  port: 443
-  uuid: c21631d5-36c9-4664-b575-97eca17456be
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: neth8.lunariai.ru
-- name: 🇳🇱 荷兰 (Netherlands) 38 - tammader
-  type: vmess
-  server: 159.223.13.109
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇳🇱 荷兰 (Netherlands) 39 - tammader
-  type: ss
-  server: 82.38.31.164
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 40 - tammader
-  type: vless
-  server: sfghfdh75-production.up.railway.app
-  port: 443
-  uuid: 3515991a-d6cd-4c93-a1c1-d39a77aad058
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sfghfdh75-production.up.railway.app
-  network: ws
-  ws-opts:
-    path: /ws/3515991a-d6cd-4c93-a1c1-d39a77aad058
-    headers:
-      Host: sfghfdh75-production.up.railway.app
-- name: 🇳🇱 荷兰 (Netherlands) 41 - tammader
-  type: ss
-  server: 82.38.31.48
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 42 - tammader
-  type: ss
-  server: 82.38.31.186
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 43 - tammader
-  type: vless
-  server: 141.148.225.181
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇳🇱 荷兰 (Netherlands) 44 - tammader
-  type: ss
-  server: 82.38.31.218
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 45 - tammader
-  type: ss
-  server: 82.38.31.49
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 46 - tammader
-  type: vmess
-  server: 159.223.13.109
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇳🇱 荷兰 (Netherlands) 47 - tammader
   type: ss
   server: 82.38.31.179
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 48 - tammader
+- name: 🇳🇱 荷兰 (Netherlands) 38 - tammader
   type: ss
-  server: 82.38.31.180
+  server: 193.29.139.168
   port: 8080
   cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  password: QCXDxuDlTTMD7jtgHUjIoj
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 49 - tammader
-  type: ss
-  server: 82.38.31.174
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 39 - tammader
+  type: vmess
+  server: 159.223.13.109
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 50 - tammader
-  type: ss
-  server: 82.38.31.149
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 51 - tammader
-  type: ss
-  server: 108.181.126.122
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: CJmTCCx7Ltud
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 52 - tammader
-  type: ss
-  server: 108.181.126.122
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: CJmTCCx7Ltud
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 53 - tammader
-  type: ss
-  server: 82.38.31.155
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 54 - tammader
-  type: ss
-  server: 82.38.31.156
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 55 - tammader
-  type: ss
-  server: 82.38.31.205
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 56 - tammader
-  type: ss
-  server: 193.29.139.204
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 57 - tammader
-  type: vless
-  server: 84.235.182.97
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇳🇱 荷兰 (Netherlands) 58 - tammader
+  servername: ''
+- name: 🇳🇱 荷兰 (Netherlands) 40 - tammader
+  type: vmess
+  server: 45.90.106.24
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇳🇱 荷兰 (Netherlands) 41 - tammader
   type: ss
-  server: 82.38.31.36
+  server: 82.38.31.176
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 42 - tammader
+  type: ss
+  server: 108.181.126.122
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: CJmTCCx7Ltud
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 43 - tammader
+  type: ss
+  server: 82.38.31.46
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 59 - tammader
+- name: 🇳🇱 荷兰 (Netherlands) 44 - tammader
+  type: ss
+  server: 82.38.31.2
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 45 - tammader
+  type: vmess
+  server: 45.90.106.24
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇳🇱 荷兰 (Netherlands) 46 - tammader
+  type: ss
+  server: 82.38.31.187
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 47 - tammader
   type: vless
   server: 2.27.205.59
   port: 443
@@ -471,158 +383,28 @@ proxies:
     path: /
     headers:
       Host: 2.27.205.59
-- name: 🇳🇱 荷兰 (Netherlands) 60 - tammader
+- name: 🇳🇱 荷兰 (Netherlands) 48 - tammader
   type: ss
-  server: 82.38.31.69
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 61 - tammader
-  type: ss
-  server: 82.38.31.176
+  server: 82.38.31.186
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 62 - tammader
+- name: 🇳🇱 荷兰 (Netherlands) 49 - tammader
   type: ss
-  server: 82.38.31.215
+  server: 82.38.31.201
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 63 - tammader
-  type: vless
-  server: 154.83.186.140
-  port: 8443
-  uuid: 25d9297d-bdab-58df-8095-fe354277fa68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 3o3MQYmdSi6phvNOn8GxOy09ZAuGeV1hAZ16D6mTyBs
-  servername: www.sony.com
-  client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 64 - tammader
+- name: 🇳🇱 荷兰 (Netherlands) 50 - tammader
   type: ss
-  server: 193.29.139.202
+  server: 82.38.31.28
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 65 - tammader
-  type: ss
-  server: 193.29.139.132
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 66 - tammader
-  type: ss
-  server: 82.38.31.175
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 67 - tammader
-  type: ss
-  server: 158.173.20.208
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 68 - tammader
-  type: ss
-  server: 84.235.176.159
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: xoiE65wltS1tHSEMl5+KCYozC9gjghh3Gxx+pIGwoBE=
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 69 - tammader
-  type: ss
-  server: 82.38.31.2
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 70 - tammader
-  type: ss
-  server: 82.38.31.192
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 71 - tammader
-  type: ss
-  server: 82.38.31.35
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 72 - tammader
-  type: ss
-  server: 82.38.31.47
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 73 - tammader
-  type: ss
-  server: 82.38.31.206
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 74 - tammader
-  type: ss
-  server: 108.181.58.239
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: CJmTCCx7Ltud
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 75 - tammader
-  type: ss
-  server: 82.38.31.17
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 76 - tammader
-  type: ss
-  server: 82.38.31.18
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 77 - tammader
-  type: ss
-  server: 82.38.31.16
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 78 - tammader
-  type: ss
-  server: 45.82.67.49
-  port: 16488
-  cipher: aes-128-gcm
-  password: 7ef14360a25ffe504e38fb9a0a82f224
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 79 - tammader
-  type: vless
-  server: 163.172.214.188
-  port: 80
-  uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: SC-TheNetherlands1.09vpn.com
-- name: 🇳🇱 荷兰 (Netherlands) 80 - tammader
+- name: 🇳🇱 荷兰 (Netherlands) 51 - tammader
   type: vless
   server: 2.27.205.59
   port: 443
@@ -635,35 +417,165 @@ proxies:
     path: /
     headers:
       Host: neth8.lunariai.ru
-- name: 🇳🇱 荷兰 (Netherlands) 81 - tammader
+- name: 🇳🇱 荷兰 (Netherlands) 52 - tammader
+  type: vmess
+  server: 159.223.13.109
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇳🇱 荷兰 (Netherlands) 53 - tammader
   type: ss
-  server: 193.29.139.197
+  server: 193.29.139.204
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 82 - tammader
+- name: 🇳🇱 荷兰 (Netherlands) 54 - tammader
   type: ss
-  server: 193.29.139.212
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 83 - tammader
-  type: ss
-  server: 82.38.31.11
+  server: 82.38.31.49
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 84 - tammader
+- name: 🇳🇱 荷兰 (Netherlands) 55 - tammader
   type: ss
-  server: 82.38.31.149
+  server: 108.181.126.122
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: CJmTCCx7Ltud
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 56 - tammader
+  type: ss
+  server: 82.38.31.35
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 57 - tammader
+  type: ss
+  server: 82.38.31.36
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 58 - tammader
+  type: ss
+  server: 82.38.31.13
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 59 - tammader
+  type: ss
+  server: 193.29.139.202
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 60 - tammader
+  type: vless
+  server: 154.83.186.140
+  port: 8443
+  uuid: 25d9297d-bdab-58df-8095-fe354277fa68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 3o3MQYmdSi6phvNOn8GxOy09ZAuGeV1hAZ16D6mTyBs
+  servername: www.sony.com
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 61 - tammader
+  type: ss
+  server: 82.38.31.205
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 62 - tammader
+  type: vless
+  server: victoryprovpn-production-f93a.up.railway.app
+  port: 443
+  uuid: 9198f982-ef72-5da8-c1fb-6ae60c6abf53
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: victoryprovpn-production-f93a.up.railway.app
+  network: ws
+  ws-opts:
+    path: /ws/9198f982-ef72-5da8-c1fb-6ae60c6abf53
+    headers:
+      Host: victoryprovpn-production-f93a.up.railway.app
+- name: 🇳🇱 荷兰 (Netherlands) 63 - tammader
+  type: ss
+  server: 82.38.31.174
   port: 443
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 85 - tammader
+- name: 🇳🇱 荷兰 (Netherlands) 64 - tammader
+  type: ss
+  server: 82.38.31.39
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 65 - tammader
+  type: ss
+  server: 82.38.31.66
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 66 - tammader
+  type: ss
+  server: 82.38.31.82
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 67 - tammader
+  type: vless
+  server: 154.83.186.140
+  port: 8443
+  uuid: 25d9297d-bdab-58df-8095-fe354277fa68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 3o3MQYmdSi6phvNOn8GxOy09ZAuGeV1hAZ16D6mTyBs
+  servername: www.sony.com
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 68 - tammader
+  type: ss
+  server: 82.38.31.10
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 69 - tammader
+  type: ss
+  server: 82.38.31.17
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 70 - tammader
+  type: vmess
+  server: 159.223.13.109
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇳🇱 荷兰 (Netherlands) 71 - tammader
   type: vless
   server: 2.27.12.108
   port: 2096
@@ -677,9 +589,123 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: 2.27.12.108
-- name: 🇳🇱 荷兰 (Netherlands) 86 - tammader
+- name: 🇳🇱 荷兰 (Netherlands) 72 - tammader
+  type: vless
+  server: 134.98.147.203
+  port: 62145
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇳🇱 荷兰 (Netherlands) 73 - tammader
+  type: vless
+  server: 151.242.2.81
+  port: 443
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cf9.rumedia-cdn.com
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: cf9.rumedia-cdn.com
+- name: 🇳🇱 荷兰 (Netherlands) 74 - tammader
+  type: vless
+  server: 163.172.214.188
+  port: 80
+  uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: SC-TheNetherlands1.09vpn.com
+- name: 🇳🇱 荷兰 (Netherlands) 75 - tammader
+  type: vmess
+  server: 151.243.173.119
+  port: 33736
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess-ws
+    headers:
+      Host: 151.243.173.119
+- name: 🇳🇱 荷兰 (Netherlands) 76 - tammader
   type: ss
-  server: 82.38.31.201
+  server: 82.38.31.26
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 77 - tammader
+  type: vmess
+  server: 159.223.13.109
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇳🇱 荷兰 (Netherlands) 78 - tammader
+  type: vmess
+  server: 45.90.106.24
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇳🇱 荷兰 (Netherlands) 79 - tammader
+  type: ss
+  server: 193.29.139.147
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 80 - tammader
+  type: ss
+  server: 82.38.31.7
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 81 - tammader
+  type: ss
+  server: 108.181.58.239
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: CJmTCCx7Ltud
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 82 - tammader
+  type: ss
+  server: 82.38.31.18
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 83 - tammader
+  type: ss
+  server: 82.38.31.149
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 84 - tammader
+  type: ss
+  server: 193.29.139.198
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
@@ -773,8 +799,6 @@ proxy-groups:
   - 🇳🇱 荷兰 (Netherlands) 82 - tammader
   - 🇳🇱 荷兰 (Netherlands) 83 - tammader
   - 🇳🇱 荷兰 (Netherlands) 84 - tammader
-  - 🇳🇱 荷兰 (Netherlands) 85 - tammader
-  - 🇳🇱 荷兰 (Netherlands) 86 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -864,7 +888,5 @@ proxy-groups:
   - 🇳🇱 荷兰 (Netherlands) 82 - tammader
   - 🇳🇱 荷兰 (Netherlands) 83 - tammader
   - 🇳🇱 荷兰 (Netherlands) 84 - tammader
-  - 🇳🇱 荷兰 (Netherlands) 85 - tammader
-  - 🇳🇱 荷兰 (Netherlands) 86 - tammader
 rules:
 - MATCH,PROXIES

@@ -13,17 +13,33 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 172.105.169.70
+- name: 🇦🇺 澳大利亚 (Australia) 02 - tammader
+  type: vless
+  server: 141.101.120.73
+  port: 443
+  uuid: 5d8eb33a-2166-4daf-88fe-4be5799c493b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: noisy-term-e657.airdrop2014aa5168.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: noisy-term-e657.airdrop2014aa5168.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - tammader
+  - 🇦🇺 澳大利亚 (Australia) 02 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - tammader
+  - 🇦🇺 澳大利亚 (Australia) 02 - tammader
 rules:
 - MATCH,PROXIES

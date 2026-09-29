@@ -6,35 +6,7 @@ log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - tammader
   type: vless
-  server: 188.114.97.7
-  port: 2083
-  uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shy-fog-af06.alvlirm333.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shy-fog-af06.alvlirm333.workers.dev
-- name: 🇮🇪 IE 02 - tammader
-  type: vless
-  server: 104.21.48.107
-  port: 443
-  uuid: 29fb68bb-ff05-4fd4-8393-cc6c05d81a79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: purple-butterfly-8496.erfannull36.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: purple-butterfly-8496.erfannull36.workers.dev
-- name: 🇮🇪 IE 03 - tammader
-  type: vless
-  server: 188.114.97.6
+  server: 45.141.234.138
   port: 443
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
@@ -43,24 +15,10 @@ proxies:
   servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
-    path: /fp=chrome?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET?ed=512
+    path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
-- name: 🇮🇪 IE 04 - tammader
-  type: vless
-  server: 172.67.222.62
-  port: 443
-  uuid: ea50b1a3-3a98-4c5e-a150-48ada40d68d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cf-vless-4cf55824.aimall.fr
-  network: ws
-  ws-opts:
-    path: /connect
-    headers:
-      Host: cf-vless-4cf55824.aimall.fr
-- name: 🇮🇪 IE 05 - tammader
+- name: 🇮🇪 IE 02 - tammader
   type: vless
   server: 45.141.234.138
   port: 443
@@ -81,9 +39,6 @@ proxy-groups:
   - AUTO
   - 🇮🇪 IE 01 - tammader
   - 🇮🇪 IE 02 - tammader
-  - 🇮🇪 IE 03 - tammader
-  - 🇮🇪 IE 04 - tammader
-  - 🇮🇪 IE 05 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -91,8 +46,5 @@ proxy-groups:
   proxies:
   - 🇮🇪 IE 01 - tammader
   - 🇮🇪 IE 02 - tammader
-  - 🇮🇪 IE 03 - tammader
-  - 🇮🇪 IE 04 - tammader
-  - 🇮🇪 IE 05 - tammader
 rules:
 - MATCH,PROXIES

@@ -6,112 +6,67 @@ log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - tammader
   type: vmess
-  server: 188.114.96.19
-  port: 80
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+  servername: ''
 - name: 🇫🇷 法国 (France) 02 - tammader
   type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
+  server: nl-irancell3.xelfona.ir
+  port: 49548
+  cipher: 2022-blake3-aes-256-gcm
+  password: zZ+k8UwdTQ9ZTnxEodTN2YI6KrFKEAcBWgCbLZIVUTE=:LbWEdFyjKcvZcv9agyGttSn0HNap+ecf50/UrlGMBCQ=
   udp: true
 - name: 🇫🇷 法国 (France) 03 - tammader
-  type: ss
-  server: 195.154.81.205
-  port: 15980
-  cipher: aes-128-gcm
-  password: ad5e2de88283f5b915c25982e06bb45b
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 149.202.58.99
 - name: 🇫🇷 法国 (France) 04 - tammader
   type: vless
-  server: 172.67.185.98
-  port: 2053
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  server: 104.21.50.143
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-5a26a30b00dc
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fr.api-music-fa.com
+  servername: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
   network: ws
   ws-opts:
-    path: /api/voip/updates/static/fr2035
+    path: /stream/PANEL_ZEUS/5a26a30b00dc
     headers:
-      Host: fr.api-music-fa.com
+      Host: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
 - name: 🇫🇷 法国 (France) 05 - tammader
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 104.21.72.47
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: trex-panel-nubj0s.samifakor.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/ef859652a80e
+    headers:
+      Host: trex-panel-nubj0s.samifakor.workers.dev
 - name: 🇫🇷 法国 (France) 06 - tammader
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 07 - tammader
   type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 08 - tammader
-  type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 09 - tammader
-  type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 10 - tammader
-  type: vless
-  server: 81.95.4.189
+  server: 35.157.240.237
   port: 443
   uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
@@ -123,21 +78,21 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇫🇷 法国 (France) 11 - tammader
+- name: 🇫🇷 法国 (France) 07 - tammader
   type: vless
-  server: 104.21.84.30
-  port: 2053
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fr.api-music-fa.com
+  servername: bab-6.site
   network: ws
   ws-opts:
-    path: /api/voip/updates/static/fr2035
+    path: /vws/
     headers:
-      Host: fr.api-music-fa.com
-- name: 🇫🇷 法国 (France) 12 - tammader
+      Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 08 - tammader
   type: vless
   server: 94.130.178.194
   port: 443
@@ -151,7 +106,173 @@ proxies:
     path: /
     headers:
       Host: shephe.dpdns.org
+- name: 🇫🇷 法国 (France) 09 - tammader
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+  udp: true
+- name: 🇫🇷 法国 (France) 10 - tammader
+  type: vmess
+  server: 188.114.96.19
+  port: 80
+  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇫🇷 法国 (France) 11 - tammader
+  type: vless
+  server: 104.20.17.127
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: trex-panel-nubj0s.samifakor.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/ef859652a80e
+    headers:
+      Host: trex-panel-nubj0s.samifakor.workers.dev
+- name: 🇫🇷 法国 (France) 12 - tammader
+  type: vless
+  server: 104.21.84.30
+  port: 2053
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fr.api-music-fa.com
+  network: ws
+  ws-opts:
+    path: /api/voip/updates/static/fr2035
+    headers:
+      Host: fr.api-music-fa.com
 - name: 🇫🇷 法国 (France) 13 - tammader
+  type: vless
+  server: ewylr.smartorbitbox-bekhabdg.site
+  port: 443
+  uuid: bcf89786-1b01-47dc-9a36-a7db03626e53
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ewylr.smartorbitbox-bekhabdg.site
+  network: ws
+  ws-opts:
+    path: /tigerjoon
+    headers:
+      Host: ewylr.smartorbitbox-bekhabdg.site
+- name: 🇫🇷 法国 (France) 14 - tammader
+  type: vless
+  server: 172.67.206.254
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-5a26a30b00dc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/5a26a30b00dc
+    headers:
+      Host: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
+- name: 🇫🇷 法国 (France) 15 - tammader
+  type: ss
+  server: 195.154.81.205
+  port: 15980
+  cipher: aes-128-gcm
+  password: ad5e2de88283f5b915c25982e06bb45b
+  udp: true
+- name: 🇫🇷 法国 (France) 16 - tammader
+  type: vless
+  server: 104.17.154.178
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-9568000eed47
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: urzpn8e9ub5s.shoameni2.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/9568000eed47/loc-1
+    headers:
+      Host: urzpn8e9ub5s.shoameni2.workers.dev
+- name: 🇫🇷 法国 (France) 17 - tammader
+  type: vless
+  server: 172.67.140.37
+  port: 443
+  uuid: 527451fe-ee1f-4e6f-94ca-808f055f7c9b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
+  network: ws
+  ws-opts:
+    path: /vl/ERYN0G44hia16zhR
+    headers:
+      Host: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
+- name: 🇫🇷 法国 (France) 18 - tammader
+  type: vless
+  server: 172.67.185.98
+  port: 2053
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fr.api-music-fa.com
+  network: ws
+  ws-opts:
+    path: /api/voip/updates/static/fr2035
+    headers:
+      Host: fr.api-music-fa.com
+- name: 🇫🇷 法国 (France) 19 - tammader
+  type: vless
+  server: 172.67.193.182
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: trex-panel-nubj0s.samifakor.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/ef859652a80e
+    headers:
+      Host: trex-panel-nubj0s.samifakor.workers.dev
+- name: 🇫🇷 法国 (France) 20 - tammader
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 21 - tammader
+  type: vless
+  server: 172.67.175.23
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: trex-panel-nubj0s.samifakor.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/ef859652a80e
+    headers:
+      Host: trex-panel-nubj0s.samifakor.workers.dev
+- name: 🇫🇷 法国 (France) 22 - tammader
   type: vmess
   server: 162.19.204.71
   port: 1234
@@ -162,7 +283,21 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 14 - tammader
+- name: 🇫🇷 法国 (France) 23 - tammader
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 24 - tammader
   type: vless
   server: 149.202.58.99
   port: 443
@@ -195,6 +330,16 @@ proxy-groups:
   - 🇫🇷 法国 (France) 12 - tammader
   - 🇫🇷 法国 (France) 13 - tammader
   - 🇫🇷 法国 (France) 14 - tammader
+  - 🇫🇷 法国 (France) 15 - tammader
+  - 🇫🇷 法国 (France) 16 - tammader
+  - 🇫🇷 法国 (France) 17 - tammader
+  - 🇫🇷 法国 (France) 18 - tammader
+  - 🇫🇷 法国 (France) 19 - tammader
+  - 🇫🇷 法国 (France) 20 - tammader
+  - 🇫🇷 法国 (France) 21 - tammader
+  - 🇫🇷 法国 (France) 22 - tammader
+  - 🇫🇷 法国 (France) 23 - tammader
+  - 🇫🇷 法国 (France) 24 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -214,5 +359,15 @@ proxy-groups:
   - 🇫🇷 法国 (France) 12 - tammader
   - 🇫🇷 法国 (France) 13 - tammader
   - 🇫🇷 法国 (France) 14 - tammader
+  - 🇫🇷 法国 (France) 15 - tammader
+  - 🇫🇷 法国 (France) 16 - tammader
+  - 🇫🇷 法国 (France) 17 - tammader
+  - 🇫🇷 法国 (France) 18 - tammader
+  - 🇫🇷 法国 (France) 19 - tammader
+  - 🇫🇷 法国 (France) 20 - tammader
+  - 🇫🇷 法国 (France) 21 - tammader
+  - 🇫🇷 法国 (France) 22 - tammader
+  - 🇫🇷 法国 (France) 23 - tammader
+  - 🇫🇷 法国 (France) 24 - tammader
 rules:
 - MATCH,PROXIES

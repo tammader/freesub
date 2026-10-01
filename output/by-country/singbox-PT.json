@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇶🇦 QA 01 - tammader"
+        "🇵🇹 PT 01 - tammader"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇶🇦 QA 01 - tammader"
+        "🇵🇹 PT 01 - tammader"
       ],
       "url": "https://www.google.com/generate_204"
     },

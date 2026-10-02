@@ -18,15 +18,37 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: ''
+      Host: 168.138.43.75
 - name: 🇯🇵 日本 (Japan) 02 - tammader
-  type: ss
-  server: 149.22.87.240
+  type: vless
+  server: 104.17.50.53
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 03 - tammader
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: ''
+- name: 🇯🇵 日本 (Japan) 04 - tammader
   type: vmess
   server: 45.32.57.118
   port: 4433
@@ -36,37 +58,34 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 04 - tammader
-  type: vless
-  server: 43.170.8.95
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 05 - tammader
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /cctv13.m3u8
     headers:
-      Host: jp3.yohototo.top
+      Host: ''
 - name: 🇯🇵 日本 (Japan) 06 - tammader
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 07 - tammader
   type: vless
-  server: 207.57.131.171
+  server: 45.14.106.64
   port: 443
   uuid: 8344360f-0349-4784-a19f-33fd92e89389
   udp: true
@@ -78,36 +97,27 @@ proxies:
     path: /v2
     headers:
       Host: api.w2m.ink
-- name: 🇯🇵 日本 (Japan) 07 - tammader
+- name: 🇯🇵 日本 (Japan) 08 - tammader
   type: ss
-  server: 149.22.87.204
+  server: 149.22.87.240
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇯🇵 日本 (Japan) 08 - tammader
+- name: 🇯🇵 日本 (Japan) 09 - tammader
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 10 - tammader
   type: vmess
   server: 45.32.57.118
   port: 4433
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
   alterId: 0
   cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 09 - tammader
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 10 - tammader
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
   udp: true
   tls: false
   skip-cert-verify: true
@@ -120,6 +130,58 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 12 - tammader
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 13 - tammader
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: ''
+- name: 🇯🇵 日本 (Japan) 14 - tammader
+  type: vless
+  server: 162.159.254.3
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 15 - tammader
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 16 - tammader
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 17 - tammader
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -134,22 +196,28 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: jp01.a0a.xyz
-- name: 🇯🇵 日本 (Japan) 13 - tammader
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 14 - tammader
+- name: 🇯🇵 日本 (Japan) 18 - tammader
   type: vless
-  server: 137.220.221.179
+  server: 104.19.164.155
   port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 15 - tammader
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 19 - tammader
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 20 - tammader
   type: vmess
   server: 45.32.57.118
   port: 4433
@@ -159,21 +227,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 16 - tammader
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 17 - tammader
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 18 - tammader
+- name: 🇯🇵 日本 (Japan) 21 - tammader
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -187,46 +241,74 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: ''
-- name: 🇯🇵 日本 (Japan) 19 - tammader
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 20 - tammader
-  type: vless
-  server: 103.27.187.162
-  port: 8443
-  uuid: 273e3ba1-ef63-47c1-88db-c368bf1e8736
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cfbb.dongkunjian.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: cfbb.dongkunjian.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 21 - tammader
-  type: vless
-  server: 104.16.10.234
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
+      Host: jp01.a0a.xyz
 - name: 🇯🇵 日本 (Japan) 22 - tammader
+  type: ss
+  server: 149.22.87.241
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 23 - tammader
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 24 - tammader
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 25 - tammader
+  type: vless
+  server: 207.57.131.171
+  port: 443
+  uuid: 8344360f-0349-4784-a19f-33fd92e89389
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: api.w2m.ink
+  network: ws
+  ws-opts:
+    path: /v2
+    headers:
+      Host: api.w2m.ink
+- name: 🇯🇵 日本 (Japan) 26 - tammader
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: jp01.a0a.xyz
+- name: 🇯🇵 日本 (Japan) 27 - tammader
+  type: vless
+  server: 45.159.50.233
+  port: 49152
+  uuid: 71b460a1-8f78-45c5-fb3c-ab26a2a1f7b9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: qp.lichao0223.cn
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 45.159.50.233
+- name: 🇯🇵 日本 (Japan) 28 - tammader
   type: vmess
   server: 45.32.57.118
   port: 4433
@@ -236,7 +318,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 23 - tammader
+- name: 🇯🇵 日本 (Japan) 29 - tammader
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -251,7 +333,7 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: none
-- name: 🇯🇵 日本 (Japan) 24 - tammader
+- name: 🇯🇵 日本 (Japan) 30 - tammader
   type: vless
   server: 137.220.221.179
   port: 443
@@ -259,74 +341,22 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 25 - tammader
+- name: 🇯🇵 日本 (Japan) 31 - tammader
   type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 26 - tammader
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 27 - tammader
-  type: vless
-  server: 92.113.124.38
-  port: 443
-  uuid: 273e3ba1-ef63-47c1-88db-c368bf1e8736
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cfbb.dongkunjian.ccwu.cc
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /cctv13.m3u8
     headers:
-      Host: cfbb.dongkunjian.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 28 - tammader
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 29 - tammader
-  type: vless
-  server: 162.159.254.3
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 30 - tammader
-  type: vless
-  server: 180.149.230.33
-  port: 443
-  uuid: 273e3ba1-ef63-47c1-88db-c368bf1e8736
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cfbb.dongkunjian.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: cfbb.dongkunjian.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 31 - tammader
+      Host: none
+- name: 🇯🇵 日本 (Japan) 32 - tammader
   type: vless
   server: 43.130.241.204
   port: 443
@@ -340,6 +370,16 @@ proxies:
     path: /v2
     headers:
       Host: api.w2m.ink
+- name: 🇯🇵 日本 (Japan) 33 - tammader
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -376,6 +416,8 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 29 - tammader
   - 🇯🇵 日本 (Japan) 30 - tammader
   - 🇯🇵 日本 (Japan) 31 - tammader
+  - 🇯🇵 日本 (Japan) 32 - tammader
+  - 🇯🇵 日本 (Japan) 33 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -412,5 +454,7 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 29 - tammader
   - 🇯🇵 日本 (Japan) 30 - tammader
   - 🇯🇵 日本 (Japan) 31 - tammader
+  - 🇯🇵 日本 (Japan) 32 - tammader
+  - 🇯🇵 日本 (Japan) 33 - tammader
 rules:
 - MATCH,PROXIES

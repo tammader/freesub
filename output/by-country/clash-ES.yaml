@@ -5,23 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - tammader
-  type: vmess
-  server: 66.163.118.73
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 02 - tammader
   type: ss
-  server: 108.181.121.226
+  server: 140.174.184.5
   port: 8388
   cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
+  password: qItG8SueYQcP
   udp: true
-- name: 🇪🇸 西班牙 (Spain) 03 - tammader
+- name: 🇪🇸 西班牙 (Spain) 02 - tammader
   type: vmess
   server: mygptagent.org
   port: 443
@@ -31,46 +21,26 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: mygptagent.org
+  servername: ''
   network: ws
   ws-opts:
     path: /linkvws
     headers:
-      Host: mygptagent.org
-- name: 🇪🇸 西班牙 (Spain) 04 - tammader
-  type: ss
-  server: 140.174.184.5
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-  udp: true
-- name: 🇪🇸 西班牙 (Spain) 05 - tammader
+      Host: ''
+- name: 🇪🇸 西班牙 (Spain) 03 - tammader
   type: ss
   server: 108.181.121.226
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: WSyL4XTwNsdv
   udp: true
-- name: 🇪🇸 西班牙 (Spain) 06 - tammader
-  type: vmess
-  server: 66.163.118.73
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+- name: 🇪🇸 西班牙 (Spain) 04 - tammader
+  type: ss
+  server: 108.181.121.226
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
   udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 07 - tammader
-  type: vmess
-  server: 66.163.118.73
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -80,9 +50,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - tammader
   - 🇪🇸 西班牙 (Spain) 03 - tammader
   - 🇪🇸 西班牙 (Spain) 04 - tammader
-  - 🇪🇸 西班牙 (Spain) 05 - tammader
-  - 🇪🇸 西班牙 (Spain) 06 - tammader
-  - 🇪🇸 西班牙 (Spain) 07 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -92,8 +59,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - tammader
   - 🇪🇸 西班牙 (Spain) 03 - tammader
   - 🇪🇸 西班牙 (Spain) 04 - tammader
-  - 🇪🇸 西班牙 (Spain) 05 - tammader
-  - 🇪🇸 西班牙 (Spain) 06 - tammader
-  - 🇪🇸 西班牙 (Spain) 07 - tammader
 rules:
 - MATCH,PROXIES

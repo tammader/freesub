@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇹 意大利 (Italy) 01 - tammader",
-        "🇮🇹 意大利 (Italy) 02 - tammader"
+        "🇲🇾 MY 01 - tammader"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇹 意大利 (Italy) 01 - tammader",
-        "🇮🇹 意大利 (Italy) 02 - tammader"
+        "🇲🇾 MY 01 - tammader"
       ],
       "url": "https://www.google.com/generate_204"
     },

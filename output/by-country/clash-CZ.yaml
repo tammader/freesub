@@ -15,36 +15,20 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇨🇿 CZ 02 - tammader
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 07821f66-cdb7-4c70-9de6-e230cffac470
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/Li1khIHH3DNItJyzraemsPBQvu
-    headers:
-      Host: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - tammader
-  - 🇨🇿 CZ 02 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - tammader
-  - 🇨🇿 CZ 02 - tammader
 rules:
 - MATCH,PROXIES

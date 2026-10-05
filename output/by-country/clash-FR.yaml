@@ -5,37 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - tammader
-  type: vless
-  server: 172.67.175.23
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: trex-panel-nubj0s.samifakor.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/TrexBridge/ef859652a80e
-    headers:
-      Host: trex-panel-nubj0s.samifakor.workers.dev
-- name: 🇫🇷 法国 (France) 02 - tammader
   type: vmess
-  server: 145.239.55.210
-  port: 80
-  uuid: 479526cd-5011-43cf-a788-504da95e07c2
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 02 - tammader
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
   network: ws
   ws-opts:
-    path: /
+    path: /vws/
     headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+      Host: bab-6.site
 - name: 🇫🇷 法国 (France) 03 - tammader
   type: vless
-  server: 104.21.84.30
+  server: 172.67.185.98
   port: 2053
   uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
   udp: true
@@ -49,48 +45,33 @@ proxies:
       Host: fr.api-music-fa.com
 - name: 🇫🇷 法国 (France) 04 - tammader
   type: vless
-  server: fr.api-music-fa.com
+  server: 172.67.185.98
   port: 2053
   uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: fr.api-music-fa.com
   network: ws
   ws-opts:
     path: /api/voip/updates/static/fr2035
     headers:
-      Host: ''
+      Host: fr.api-music-fa.com
 - name: 🇫🇷 法国 (France) 05 - tammader
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 104.21.84.30
+  port: 2053
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: fr.api-music-fa.com
+  network: ws
+  ws-opts:
+    path: /api/voip/updates/static/fr2035
+    headers:
+      Host: fr.api-music-fa.com
 - name: 🇫🇷 法国 (France) 06 - tammader
-  type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-  udp: true
-- name: 🇫🇷 法国 (France) 07 - tammader
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 08 - tammader
   type: vless
   server: 81.95.4.189
   port: 443
@@ -104,6 +85,36 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
+- name: 🇫🇷 法国 (France) 07 - tammader
+  type: vmess
+  server: 188.114.96.19
+  port: 80
+  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇫🇷 法国 (France) 08 - tammader
+  type: vmess
+  server: 188.114.96.19
+  port: 80
+  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇫🇷 法国 (France) 09 - tammader
   type: vless
   server: 149.202.58.99
@@ -120,29 +131,33 @@ proxies:
       Host: 149.202.58.99
 - name: 🇫🇷 法国 (France) 10 - tammader
   type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 11 - tammader
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  server: fr.api-music-fa.com
+  port: 2053
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
   udp: true
   tls: true
   skip-cert-verify: true
   servername: ''
+  network: ws
+  ws-opts:
+    path: /api/voip/updates/static/fr2035
+    headers:
+      Host: ''
+- name: 🇫🇷 法国 (France) 11 - tammader
+  type: vmess
+  server: 188.114.96.19
+  port: 80
+  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇫🇷 法国 (France) 12 - tammader
   type: vmess
   server: 188.114.96.19
@@ -159,6 +174,13 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇫🇷 法国 (France) 13 - tammader
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+  udp: true
+- name: 🇫🇷 法国 (France) 14 - tammader
   type: vless
   server: 51.77.217.70
   port: 2053
@@ -169,22 +191,7 @@ proxies:
   reality-opts:
     public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 14 - tammader
-  type: vmess
-  server: 188.114.96.19
-  port: 80
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+  client-fingerprint: firefox
 - name: 🇫🇷 法国 (France) 15 - tammader
   type: vmess
   server: 141.95.65.9
@@ -198,59 +205,6 @@ proxies:
   servername: ''
 - name: 🇫🇷 法国 (France) 16 - tammader
   type: vless
-  server: 172.67.193.182
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: trex-panel-nubj0s.samifakor.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/TrexBridge/ef859652a80e
-    headers:
-      Host: trex-panel-nubj0s.samifakor.workers.dev
-- name: 🇫🇷 法国 (France) 17 - tammader
-  type: vless
-  server: 172.67.185.98
-  port: 2053
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fr.api-music-fa.com
-  network: ws
-  ws-opts:
-    path: /api/voip/updates/static/fr2035
-    headers:
-      Host: fr.api-music-fa.com
-- name: 🇫🇷 法国 (France) 18 - tammader
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 19 - tammader
-  type: vless
-  server: 81.95.4.189
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇫🇷 法国 (France) 20 - tammader
-  type: vless
   server: 149.202.58.99
   port: 443
   uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
@@ -263,92 +217,71 @@ proxies:
     path: /vws/
     headers:
       Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 17 - tammader
+  type: vless
+  server: www.large-files.info
+  port: 8443
+  uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.large-files.info
+  network: ws
+  ws-opts:
+    path: /var/www/html/video/preview/download/i8o0la
+    headers:
+      Host: www.large-files.info
+- name: 🇫🇷 法国 (France) 18 - tammader
+  type: vmess
+  server: 145.239.55.210
+  port: 80
+  uuid: 479526cd-5011-43cf-a788-504da95e07c2
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+- name: 🇫🇷 法国 (France) 19 - tammader
+  type: vless
+  server: 104.21.84.30
+  port: 2053
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fr.api-music-fa.com
+  network: ws
+  ws-opts:
+    path: /api/voip/updates/static/fr2035
+    headers:
+      Host: fr.api-music-fa.com
+- name: 🇫🇷 法国 (France) 20 - tammader
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 🇫🇷 法国 (France) 21 - tammader
-  type: vless
-  server: 104.21.72.47
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: trex-panel-nubj0s.samifakor.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/TrexBridge/ef859652a80e
-    headers:
-      Host: trex-panel-nubj0s.samifakor.workers.dev
-- name: 🇫🇷 法国 (France) 22 - tammader
-  type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇫🇷 法国 (France) 23 - tammader
   type: vmess
-  server: 188.114.96.19
-  port: 80
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇫🇷 法国 (France) 24 - tammader
-  type: vless
-  server: 104.20.17.127
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
-  udp: true
   tls: true
   skip-cert-verify: true
-  servername: trex-panel-nubj0s.samifakor.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/TrexBridge/ef859652a80e
-    headers:
-      Host: trex-panel-nubj0s.samifakor.workers.dev
-- name: 🇫🇷 法国 (France) 25 - tammader
-  type: vless
-  server: 81.95.4.189
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇫🇷 法国 (France) 26 - tammader
-  type: vmess
-  server: 188.114.96.19
-  port: 80
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+  servername: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -375,11 +308,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 19 - tammader
   - 🇫🇷 法国 (France) 20 - tammader
   - 🇫🇷 法国 (France) 21 - tammader
-  - 🇫🇷 法国 (France) 22 - tammader
-  - 🇫🇷 法国 (France) 23 - tammader
-  - 🇫🇷 法国 (France) 24 - tammader
-  - 🇫🇷 法国 (France) 25 - tammader
-  - 🇫🇷 法国 (France) 26 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -406,10 +334,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 19 - tammader
   - 🇫🇷 法国 (France) 20 - tammader
   - 🇫🇷 法国 (France) 21 - tammader
-  - 🇫🇷 法国 (France) 22 - tammader
-  - 🇫🇷 法国 (France) 23 - tammader
-  - 🇫🇷 法国 (France) 24 - tammader
-  - 🇫🇷 法国 (France) 25 - tammader
-  - 🇫🇷 法国 (France) 26 - tammader
 rules:
 - MATCH,PROXIES

@@ -29,13 +29,6 @@ proxies:
   servername: www.google.com
   client-fingerprint: firefox
 - name: 🇫🇮 FI 03 - tammader
-  type: ss
-  server: 45.149.114.171
-  port: 777
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
-  udp: true
-- name: 🇫🇮 FI 04 - tammader
   type: vless
   server: 144.31.99.252
   port: 443
@@ -49,26 +42,19 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
+- name: 🇫🇮 FI 04 - tammader
+  type: ss
+  server: 185.103.110.68
+  port: 18283
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
 - name: 🇫🇮 FI 05 - tammader
   type: ss
-  server: 185.103.110.68
-  port: 18283
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 FI 06 - tammader
-  type: ss
-  server: 185.103.110.68
-  port: 18283
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 FI 07 - tammader
-  type: ss
-  server: 185.103.110.66
-  port: 18280
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  server: 45.149.114.171
+  port: 777
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -80,8 +66,6 @@ proxy-groups:
   - 🇫🇮 FI 03 - tammader
   - 🇫🇮 FI 04 - tammader
   - 🇫🇮 FI 05 - tammader
-  - 🇫🇮 FI 06 - tammader
-  - 🇫🇮 FI 07 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -92,7 +76,5 @@ proxy-groups:
   - 🇫🇮 FI 03 - tammader
   - 🇫🇮 FI 04 - tammader
   - 🇫🇮 FI 05 - tammader
-  - 🇫🇮 FI 06 - tammader
-  - 🇫🇮 FI 07 - tammader
 rules:
 - MATCH,PROXIES

@@ -13,19 +13,12 @@ proxies:
   udp: true
 - name: 🇪🇸 西班牙 (Spain) 02 - tammader
   type: ss
-  server: 108.181.121.226
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-  udp: true
-- name: 🇪🇸 西班牙 (Spain) 03 - tammader
-  type: ss
   server: 140.174.184.5
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
   udp: true
-- name: 🇪🇸 西班牙 (Spain) 04 - tammader
+- name: 🇪🇸 西班牙 (Spain) 03 - tammader
   type: vless
   server: es4.h1cloud.net
   port: 25047
@@ -37,6 +30,13 @@ proxies:
     public-key: opG0oNW-PMHi8V4E0101eEqOqPlZVKCuRkF6dcWeqBU
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 04 - tammader
+  type: ss
+  server: 140.174.184.5
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select

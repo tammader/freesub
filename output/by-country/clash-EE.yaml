@@ -15,39 +15,46 @@ proxies:
   servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 02 - tammader
   type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 03 - tammader
-  type: vless
-  server: 94.183.170.135
+  server: 77.72.85.247
   port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 04 - tammader
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  servername: fdghyt.com
   network: ws
   ws-opts:
-    path: /
+    path: /vpn-wss/fluxor/59011/
     headers:
-      Host: 94.183.170.135
+      Host: fdghyt.com
+- name: 🇪🇪 EE 03 - tammader
+  type: vless
+  server: 77.72.85.246
+  port: 8443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
+- name: 🇪🇪 EE 04 - tammader
+  type: vless
+  server: 77.72.85.247
+  port: 8443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
 - name: 🇪🇪 EE 05 - tammader
   type: vless
   server: 77.72.85.247
@@ -64,7 +71,7 @@ proxies:
       Host: fdghyt.com
 - name: 🇪🇪 EE 06 - tammader
   type: vless
-  server: 77.72.85.246
+  server: 194.26.141.148
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
@@ -78,7 +85,21 @@ proxies:
       Host: fdghyt.com
 - name: 🇪🇪 EE 07 - tammader
   type: vless
-  server: 194.26.141.148
+  server: 141.0.187.16
+  port: 2083
+  uuid: fba73f98-777a-42a6-83c0-7d1f6f070e8d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: crt.dodopanel.biz
+  network: ws
+  ws-opts:
+    path: /vless-ws
+    headers:
+      Host: 141.0.187.16
+- name: 🇪🇪 EE 08 - tammader
+  type: vless
+  server: 77.72.85.246
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
@@ -90,15 +111,6 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
-- name: 🇪🇪 EE 08 - tammader
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 09 - tammader
   type: vless
   server: 77.72.85.246
@@ -115,29 +127,19 @@ proxies:
       Host: fdghyt.com
 - name: 🇪🇪 EE 10 - tammader
   type: vless
-  server: 77.72.85.247
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fdghyt.com
   network: ws
   ws-opts:
-    path: /vpn-wss/fluxor/59011/
+    path: /
     headers:
-      Host: fdghyt.com
+      Host: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 11 - tammader
   type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 12 - tammader
-  type: vless
   server: 77.72.85.247
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
@@ -150,82 +152,6 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
-- name: 🇪🇪 EE 13 - tammader
-  type: vless
-  server: 141.0.187.16
-  port: 2083
-  uuid: fba73f98-777a-42a6-83c0-7d1f6f070e8d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: crt.dodopanel.biz
-  network: ws
-  ws-opts:
-    path: /vless-ws
-    headers:
-      Host: 141.0.187.16
-- name: 🇪🇪 EE 14 - tammader
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 15 - tammader
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 16 - tammader
-  type: vless
-  server: 77.72.85.247
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fdghyt.com
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: fdghyt.com
-- name: 🇪🇪 EE 17 - tammader
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 18 - tammader
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
 proxy-groups:
 - name: PROXIES
   type: select
@@ -242,13 +168,6 @@ proxy-groups:
   - 🇪🇪 EE 09 - tammader
   - 🇪🇪 EE 10 - tammader
   - 🇪🇪 EE 11 - tammader
-  - 🇪🇪 EE 12 - tammader
-  - 🇪🇪 EE 13 - tammader
-  - 🇪🇪 EE 14 - tammader
-  - 🇪🇪 EE 15 - tammader
-  - 🇪🇪 EE 16 - tammader
-  - 🇪🇪 EE 17 - tammader
-  - 🇪🇪 EE 18 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -265,12 +184,5 @@ proxy-groups:
   - 🇪🇪 EE 09 - tammader
   - 🇪🇪 EE 10 - tammader
   - 🇪🇪 EE 11 - tammader
-  - 🇪🇪 EE 12 - tammader
-  - 🇪🇪 EE 13 - tammader
-  - 🇪🇪 EE 14 - tammader
-  - 🇪🇪 EE 15 - tammader
-  - 🇪🇪 EE 16 - tammader
-  - 🇪🇪 EE 17 - tammader
-  - 🇪🇪 EE 18 - tammader
 rules:
 - MATCH,PROXIES

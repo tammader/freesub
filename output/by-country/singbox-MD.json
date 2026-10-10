@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇲🇩 MD 01 - tammader",
+        "🇲🇩 MD 02 - tammader",
+        "🇲🇩 MD 03 - tammader",
+        "🇲🇩 MD 04 - tammader",
+        "🇲🇩 MD 05 - tammader",
+        "🇲🇩 MD 06 - tammader",
+        "🇲🇩 MD 07 - tammader",
+        "🇲🇩 MD 08 - tammader",
+        "🇲🇩 MD 09 - tammader",
+        "🇲🇩 MD 10 - tammader",
+        "🇲🇩 MD 11 - tammader",
+        "🇲🇩 MD 12 - tammader",
+        "🇲🇩 MD 13 - tammader",
+        "🇲🇩 MD 14 - tammader",
+        "🇲🇩 MD 15 - tammader"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇲🇩 MD 01 - tammader",
+        "🇲🇩 MD 02 - tammader",
+        "🇲🇩 MD 03 - tammader",
+        "🇲🇩 MD 04 - tammader",
+        "🇲🇩 MD 05 - tammader",
+        "🇲🇩 MD 06 - tammader",
+        "🇲🇩 MD 07 - tammader",
+        "🇲🇩 MD 08 - tammader",
+        "🇲🇩 MD 09 - tammader",
+        "🇲🇩 MD 10 - tammader",
+        "🇲🇩 MD 11 - tammader",
+        "🇲🇩 MD 12 - tammader",
+        "🇲🇩 MD 13 - tammader",
+        "🇲🇩 MD 14 - tammader",
+        "🇲🇩 MD 15 - tammader"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

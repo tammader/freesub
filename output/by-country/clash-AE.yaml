@@ -6,33 +6,34 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - tammader
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: anydesk.com
+  port: 8880
+  uuid: b85c8be2-3109-4b8a-aa82-f0d8fe06f5ae
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
-      Host: uae.unixzone.us
+      Host: young-dust-b8d9.31-8ba.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 02 - tammader
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 57.129.130.63
+  port: 52014
+  uuid: d731cf09-79a6-4647-aabe-8e0fda4fe3be
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /@Marisa_kristi
     headers:
-      Host: uae.unixzone.us
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 03 - tammader
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -82,32 +83,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - tammader
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 08 - tammader
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -119,8 +94,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - tammader
   - 🇦🇪 阿联酋 (UAE) 05 - tammader
   - 🇦🇪 阿联酋 (UAE) 06 - tammader
-  - 🇦🇪 阿联酋 (UAE) 07 - tammader
-  - 🇦🇪 阿联酋 (UAE) 08 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -132,7 +105,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - tammader
   - 🇦🇪 阿联酋 (UAE) 05 - tammader
   - 🇦🇪 阿联酋 (UAE) 06 - tammader
-  - 🇦🇪 阿联酋 (UAE) 07 - tammader
-  - 🇦🇪 阿联酋 (UAE) 08 - tammader
 rules:
 - MATCH,PROXIES

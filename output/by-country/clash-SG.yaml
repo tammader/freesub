@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - tammader
   type: vless
-  server: 141.193.213.20
+  server: 141.193.213.21
   port: 8443
   uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
   udp: true
@@ -33,6 +33,40 @@ proxies:
     headers:
       Host: free.nadun.store
 - name: 🇸🇬 新加坡 (Singapore) 03 - tammader
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 04 - tammader
+  type: vless
+  server: free.nadun.store
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 05 - tammader
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 06 - tammader
   type: vless
   server: 45.118.133.249
   port: 443
@@ -46,73 +80,20 @@ proxies:
     path: /
     headers:
       Host: free.nadun.store
-- name: 🇸🇬 新加坡 (Singapore) 04 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 07 - tammader
   type: vless
-  server: 43.174.193.1
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇸🇬 新加坡 (Singapore) 05 - tammader
-  type: vless
-  server: free.nadun.store
-  port: 443
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.nadun.store
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
-- name: 🇸🇬 新加坡 (Singapore) 06 - tammader
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  server: support.zoom.us
+  port: 80
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 07 - tammader
-  type: vless
-  server: 104.16.10.199
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
   network: ws
   ws-opts:
     path: /
     headers:
       Host: u.srilankangrill.online
 - name: 🇸🇬 新加坡 (Singapore) 08 - tammader
-  type: vless
-  server: 104.16.156.227
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 09 - tammader
   type: vmess
   server: ww11.levikogjgfdd.ir
   port: 18000
@@ -122,16 +103,21 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 10 - tammader
-  type: ss
-  server: 129.150.59.74
-  port: 14384
-  cipher: 2022-blake3-aes-256-gcm
-  password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 11 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 09 - tammader
   type: vless
-  server: free.nadun.store
+  server: 545.150333.xyz
+  port: 21003
+  uuid: b17f6233-6726-41ff-9f62-fde7ccdbd282
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 7RyQhh-unO6BjkHRVycWKlFyQgJ3vi5_bAI3Mc8CGCA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 10 - tammader
+  type: vless
+  server: 188.114.98.0
   port: 443
   uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
   udp: true
@@ -143,30 +129,44 @@ proxies:
     path: /
     headers:
       Host: free.nadun.store
-- name: 🇸🇬 新加坡 (Singapore) 12 - tammader
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 13 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 11 - tammader
   type: vless
-  server: 45.38.60.153
-  port: 2053
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  server: 141.193.213.21
+  port: 8443
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lucasjow.us.ci
+  servername: u.srilankangrill.online
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: lucasjow.us.ci
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 12 - tammader
+  type: vless
+  server: 511.150333.xyz
+  port: 21004
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 13 - tammader
+  type: vless
+  server: 511.150333.xyz
+  port: 21001
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 14 - tammader
   type: vless
   server: 45.118.133.249
@@ -183,51 +183,7 @@ proxies:
       Host: free.nadun.store
 - name: 🇸🇬 新加坡 (Singapore) 15 - tammader
   type: vless
-  server: 511.150333.xyz
-  port: 21002
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 16 - tammader
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 17 - tammader
-  type: vless
-  server: 511.150333.xyz
-  port: 21001
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 18 - tammader
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 19 - tammader
-  type: vless
-  server: 104.16.10.235
+  server: 104.16.10.233
   port: 443
   uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   udp: true
@@ -239,17 +195,7 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 20 - tammader
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 21 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 16 - tammader
   type: vless
   server: 104.21.5.75
   port: 443
@@ -263,9 +209,49 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 22 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 17 - tammader
+  type: vless
+  server: free.nadun.store
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 18 - tammader
+  type: vless
+  server: 43.174.193.1
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇸🇬 新加坡 (Singapore) 19 - tammader
+  type: vless
+  server: 545.150333.xyz
+  port: 21003
+  uuid: b17f6233-6726-41ff-9f62-fde7ccdbd282
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 7RyQhh-unO6BjkHRVycWKlFyQgJ3vi5_bAI3Mc8CGCA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 20 - tammader
   type: vmess
-  server: 149.88.23.207
+  server: ww11.levikogjgfdd.ir
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -273,7 +259,48 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 21 - tammader
+  type: vless
+  server: 141.193.213.20
+  port: 8443
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 22 - tammader
+  type: vless
+  server: support.zoom.us
+  port: 80
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
 - name: 🇸🇬 新加坡 (Singapore) 23 - tammader
+  type: vless
+  server: free.nadun.store
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 24 - tammader
   type: vless
   server: 139.162.27.96
   port: 2096
@@ -287,45 +314,7 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 24 - tammader
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.nadun.store
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
 - name: 🇸🇬 新加坡 (Singapore) 25 - tammader
-  type: vless
-  server: 45.118.133.249
-  port: 443
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.nadun.store
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
-- name: 🇸🇬 新加坡 (Singapore) 26 - tammader
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 27 - tammader
   type: vmess
   server: ww11.levikogjgfdd.ir
   port: 18000
@@ -335,20 +324,38 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 28 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 26 - tammader
   type: vless
-  server: 104.17.3.81
-  port: 443
-  uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+  server: 545.150333.xyz
+  port: 21004
+  uuid: b17f6233-6726-41ff-9f62-fde7ccdbd282
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nautica-cff.kloningstrife002.workers.dev
-  network: ws
-  ws-opts:
-    path: /138.2.74.219-28616
-    headers:
-      Host: nautica-cff.kloningstrife002.workers.dev
+  reality-opts:
+    public-key: 7RyQhh-unO6BjkHRVycWKlFyQgJ3vi5_bAI3Mc8CGCA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 27 - tammader
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 28 - tammader
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 29 - tammader
   type: vless
   server: 104.16.10.234
@@ -364,300 +371,6 @@ proxies:
     headers:
       Host: u.srilankangrill.online
 - name: 🇸🇬 新加坡 (Singapore) 30 - tammader
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 31 - tammader
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 32 - tammader
-  type: vless
-  server: 141.193.213.21
-  port: 8443
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 33 - tammader
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 34 - tammader
-  type: vless
-  server: 511.150333.xyz
-  port: 21003
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 35 - tammader
-  type: vless
-  server: free.nadun.store
-  port: 443
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.nadun.store
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
-- name: 🇸🇬 新加坡 (Singapore) 36 - tammader
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 37 - tammader
-  type: vless
-  server: 43.174.193.1
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇸🇬 新加坡 (Singapore) 38 - tammader
-  type: vless
-  server: 104.16.10.10
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 39 - tammader
-  type: vless
-  server: 47.237.74.17
-  port: 16263
-  uuid: c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 40 - tammader
-  type: vless
-  server: 156.224.76.205
-  port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vp10.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vp10.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 41 - tammader
-  type: vless
-  server: 45.118.133.249
-  port: 443
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.nadun.store
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
-- name: 🇸🇬 新加坡 (Singapore) 42 - tammader
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.nadun.store
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
-- name: 🇸🇬 新加坡 (Singapore) 43 - tammader
-  type: vless
-  server: 104.16.10.235
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 44 - tammader
-  type: vless
-  server: support.zoom.us
-  port: 80
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 45 - tammader
-  type: vless
-  server: news.zoom.us
-  port: 8443
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 46 - tammader
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 47 - tammader
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 48 - tammader
-  type: vless
-  server: support.zoom.us
-  port: 80
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 49 - tammader
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 50 - tammader
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 51 - tammader
-  type: vless
-  server: free.nadun.store
-  port: 443
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.nadun.store
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
-- name: 🇸🇬 新加坡 (Singapore) 52 - tammader
-  type: vless
-  server: 104.16.10.233
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 53 - tammader
-  type: vless
-  server: free.nadun.store
-  port: 443
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.nadun.store
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
-- name: 🇸🇬 新加坡 (Singapore) 54 - tammader
   type: vless
   server: 104.19.178.244
   port: 443
@@ -671,21 +384,7 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 55 - tammader
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.nadun.store
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
-- name: 🇸🇬 新加坡 (Singapore) 56 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 31 - tammader
   type: vless
   server: 511.150333.xyz
   port: 21004
@@ -697,34 +396,18 @@ proxies:
     public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 57 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 32 - tammader
   type: vless
-  server: 141.193.213.20
-  port: 8443
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 58 - tammader
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  server: 47.237.74.17
+  port: 16263
+  uuid: c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 59 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 33 - tammader
   type: vless
   server: 511.150333.xyz
-  port: 21003
+  port: 21002
   uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
   udp: true
   tls: true
@@ -733,121 +416,19 @@ proxies:
     public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 60 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 34 - tammader
   type: vless
-  server: 545.150333.xyz
-  port: 21003
-  uuid: b17f6233-6726-41ff-9f62-fde7ccdbd282
+  server: 45.132.75.213
+  port: 2053
+  uuid: f46182d1-e13b-47d3-97e2-fa5426a93e7c
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 7RyQhh-unO6BjkHRVycWKlFyQgJ3vi5_bAI3Mc8CGCA
+    public-key: TpWeZocgNOygOhMo0l7oJawPu7STkn9D-SOa0UppcyY
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 61 - tammader
-  type: vless
-  server: 178.94.25.73
-  port: 10443
-  uuid: 2dacc738-5720-4824-b8bc-e3db57596ba7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 62 - tammader
-  type: vless
-  server: 511.150333.xyz
-  port: 21001
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 63 - tammader
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 64 - tammader
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 65 - tammader
-  type: vless
-  server: 545.150333.xyz
-  port: 21001
-  uuid: b17f6233-6726-41ff-9f62-fde7ccdbd282
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 7RyQhh-unO6BjkHRVycWKlFyQgJ3vi5_bAI3Mc8CGCA
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 66 - tammader
-  type: vless
-  server: free.nadun.store
-  port: 443
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.nadun.store
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
-- name: 🇸🇬 新加坡 (Singapore) 67 - tammader
-  type: vless
-  server: 141.193.213.21
-  port: 8443
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 68 - tammader
-  type: vless
-  server: 511.150333.xyz
-  port: 21004
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 69 - tammader
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 70 - tammader
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 35 - tammader
   type: vless
   server: 139.162.27.96
   port: 2096
@@ -861,37 +442,32 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 71 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 36 - tammader
   type: vless
-  server: 104.21.5.75
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  server: 545.150333.xyz
+  port: 21002
+  uuid: b17f6233-6726-41ff-9f62-fde7ccdbd282
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 72 - tammader
-  type: vless
-  server: 178.94.25.73
-  port: 14430
-  uuid: 2dacc738-5720-4824-b8bc-e3db57596ba7
+  reality-opts:
+    public-key: 7RyQhh-unO6BjkHRVycWKlFyQgJ3vi5_bAI3Mc8CGCA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 37 - tammader
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 178.94.25.73
-- name: 🇸🇬 新加坡 (Singapore) 73 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 38 - tammader
   type: vless
   server: 511.150333.xyz
-  port: 21004
+  port: 21003
   uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
   udp: true
   tls: true
@@ -900,7 +476,39 @@ proxies:
     public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 74 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 39 - tammader
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 40 - tammader
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 41 - tammader
+  type: vless
+  server: 545.150333.xyz
+  port: 21002
+  uuid: b17f6233-6726-41ff-9f62-fde7ccdbd282
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 7RyQhh-unO6BjkHRVycWKlFyQgJ3vi5_bAI3Mc8CGCA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 42 - tammader
   type: vless
   server: 104.16.10.10
   port: 443
@@ -914,7 +522,7 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 75 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 43 - tammader
   type: vless
   server: 104.16.156.227
   port: 443
@@ -928,7 +536,272 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 76 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 44 - tammader
+  type: vless
+  server: 545.150333.xyz
+  port: 21001
+  uuid: b17f6233-6726-41ff-9f62-fde7ccdbd282
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 7RyQhh-unO6BjkHRVycWKlFyQgJ3vi5_bAI3Mc8CGCA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 45 - tammader
+  type: vless
+  server: 511.150333.xyz
+  port: 21004
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 46 - tammader
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 47 - tammader
+  type: vless
+  server: 104.21.5.75
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 48 - tammader
+  type: vless
+  server: free.nadun.store
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 49 - tammader
+  type: vless
+  server: 45.38.60.153
+  port: 2053
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇸🇬 新加坡 (Singapore) 50 - tammader
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 51 - tammader
+  type: vless
+  server: 104.16.156.227
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 52 - tammader
+  type: vless
+  server: 104.16.10.199
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 53 - tammader
+  type: vless
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 54 - tammader
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 55 - tammader
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 56 - tammader
+  type: vless
+  server: news.zoom.us
+  port: 8443
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 57 - tammader
+  type: vless
+  server: 545.150333.xyz
+  port: 21001
+  uuid: b17f6233-6726-41ff-9f62-fde7ccdbd282
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 7RyQhh-unO6BjkHRVycWKlFyQgJ3vi5_bAI3Mc8CGCA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 58 - tammader
+  type: vless
+  server: 104.16.10.235
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 59 - tammader
+  type: vless
+  server: 104.16.10.235
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 60 - tammader
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 61 - tammader
+  type: vless
+  server: 43.174.193.1
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇸🇬 新加坡 (Singapore) 62 - tammader
+  type: vless
+  server: 45.118.133.249
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 63 - tammader
+  type: vless
+  server: 141.193.213.20
+  port: 8443
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 64 - tammader
+  type: vless
+  server: 545.150333.xyz
+  port: 21001
+  uuid: b17f6233-6726-41ff-9f62-fde7ccdbd282
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 7RyQhh-unO6BjkHRVycWKlFyQgJ3vi5_bAI3Mc8CGCA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 65 - tammader
   type: vless
   server: 511.150333.xyz
   port: 21002
@@ -940,6 +813,210 @@ proxies:
     public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 66 - tammader
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 67 - tammader
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 68 - tammader
+  type: vless
+  server: 178.94.25.73
+  port: 14430
+  uuid: 2dacc738-5720-4824-b8bc-e3db57596ba7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.94.25.73
+- name: 🇸🇬 新加坡 (Singapore) 69 - tammader
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 70 - tammader
+  type: vless
+  server: 104.16.10.10
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 71 - tammader
+  type: vless
+  server: 511.150333.xyz
+  port: 21003
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 72 - tammader
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 73 - tammader
+  type: vless
+  server: free.nadun.store
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 74 - tammader
+  type: vless
+  server: 45.118.133.249
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 75 - tammader
+  type: vless
+  server: 511.150333.xyz
+  port: 21001
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 76 - tammader
+  type: vless
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 77 - tammader
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 78 - tammader
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 79 - tammader
+  type: vless
+  server: free.nadun.store
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 80 - tammader
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 81 - tammader
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 82 - tammader
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1021,6 +1098,12 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 74 - tammader
   - 🇸🇬 新加坡 (Singapore) 75 - tammader
   - 🇸🇬 新加坡 (Singapore) 76 - tammader
+  - 🇸🇬 新加坡 (Singapore) 77 - tammader
+  - 🇸🇬 新加坡 (Singapore) 78 - tammader
+  - 🇸🇬 新加坡 (Singapore) 79 - tammader
+  - 🇸🇬 新加坡 (Singapore) 80 - tammader
+  - 🇸🇬 新加坡 (Singapore) 81 - tammader
+  - 🇸🇬 新加坡 (Singapore) 82 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1102,5 +1185,11 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 74 - tammader
   - 🇸🇬 新加坡 (Singapore) 75 - tammader
   - 🇸🇬 新加坡 (Singapore) 76 - tammader
+  - 🇸🇬 新加坡 (Singapore) 77 - tammader
+  - 🇸🇬 新加坡 (Singapore) 78 - tammader
+  - 🇸🇬 新加坡 (Singapore) 79 - tammader
+  - 🇸🇬 新加坡 (Singapore) 80 - tammader
+  - 🇸🇬 新加坡 (Singapore) 81 - tammader
+  - 🇸🇬 新加坡 (Singapore) 82 - tammader
 rules:
 - MATCH,PROXIES

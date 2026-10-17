@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 IL 01 - tammader"
+        "🇮🇱 IL 01 - tammader",
+        "🇮🇱 IL 02 - tammader"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 IL 01 - tammader"
+        "🇮🇱 IL 01 - tammader",
+        "🇮🇱 IL 02 - tammader"
       ],
       "url": "https://www.google.com/generate_204"
     },

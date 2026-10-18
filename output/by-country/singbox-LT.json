@@ -6,24 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 LT 01 - tammader",
-        "🇱🇹 LT 02 - tammader",
-        "🇱🇹 LT 03 - tammader",
-        "🇱🇹 LT 04 - tammader",
-        "🇱🇹 LT 05 - tammader",
-        "🇱🇹 LT 06 - tammader"
+        "🇱🇹 LT 01 - tammader"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 LT 01 - tammader",
-        "🇱🇹 LT 02 - tammader",
-        "🇱🇹 LT 03 - tammader",
-        "🇱🇹 LT 04 - tammader",
-        "🇱🇹 LT 05 - tammader",
-        "🇱🇹 LT 06 - tammader"
+        "🇱🇹 LT 01 - tammader"
       ],
       "url": "https://www.google.com/generate_204"
     },

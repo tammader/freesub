@@ -6,20 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 LK 01 - tammader",
-        "🇱🇰 LK 02 - tammader",
-        "🇱🇰 LK 03 - tammader",
-        "🇱🇰 LK 04 - tammader"
+        "🇮🇪 IE 01 - tammader"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 LK 01 - tammader",
-        "🇱🇰 LK 02 - tammader",
-        "🇱🇰 LK 03 - tammader",
-        "🇱🇰 LK 04 - tammader"
+        "🇮🇪 IE 01 - tammader"
       ],
       "url": "https://www.google.com/generate_204"
     },

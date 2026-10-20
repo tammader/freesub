@@ -6,35 +6,34 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - tammader
   type: vless
-  server: 31.57.190.50
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ccc.010304.xyz
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ccc.010304.xyz
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - tammader
   type: vless
-  server: 31.57.190.89
+  server: 31.57.190.49
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
     headers:
-      Host: ccc.010304.xyz
+      Host: lucasjow.us.ci
 - name: 🇦🇪 阿联酋 (UAE) 03 - tammader
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -47,7 +46,7 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - tammader
   type: vless
-  server: 31.57.190.15
+  server: 31.57.190.89
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -56,7 +55,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇦🇪 阿联酋 (UAE) 05 - tammader
@@ -74,7 +73,7 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 06 - tammader
   type: vless
-  server: 31.57.190.50
+  server: 31.57.190.89
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -88,7 +87,7 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇦🇪 阿联酋 (UAE) 07 - tammader
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -101,7 +100,7 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 08 - tammader
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -114,21 +113,20 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 09 - tammader
   type: vless
-  server: 31.57.190.89
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
-      Host: ccc.010304.xyz
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 10 - tammader
   type: vless
-  server: 31.57.190.89
+  server: 31.57.190.50
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -142,85 +140,7 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇦🇪 阿联酋 (UAE) 11 - tammader
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 12 - tammader
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 13 - tammader
-  type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 14 - tammader
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 15 - tammader
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 16 - tammader
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 17 - tammader
-  type: vless
-  server: 31.57.190.89
+  server: 31.57.190.15
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -229,10 +149,10 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp
     headers:
       Host: ccc.010304.xyz
-- name: 🇦🇪 阿联酋 (UAE) 18 - tammader
+- name: 🇦🇪 阿联酋 (UAE) 12 - tammader
   type: vless
   server: 31.57.190.15
   port: 443
@@ -246,7 +166,75 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🇦🇪 阿联酋 (UAE) 19 - tammader
+- name: 🇦🇪 阿联酋 (UAE) 13 - tammader
+  type: vless
+  server: 31.57.190.50
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇦🇪 阿联酋 (UAE) 14 - tammader
+  type: vless
+  server: 45.59.120.217
+  port: 443
+  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
+  servername: strm.yandex.net
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 15 - tammader
+  type: vless
+  server: 31.57.190.89
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇦🇪 阿联酋 (UAE) 16 - tammader
+  type: vless
+  server: 31.57.190.89
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇦🇪 阿联酋 (UAE) 17 - tammader
+  type: vless
+  server: 31.57.190.50
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇦🇪 阿联酋 (UAE) 18 - tammader
   type: vless
   server: 84.235.244.108
   port: 22573
@@ -282,7 +270,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 16 - tammader
   - 🇦🇪 阿联酋 (UAE) 17 - tammader
   - 🇦🇪 阿联酋 (UAE) 18 - tammader
-  - 🇦🇪 阿联酋 (UAE) 19 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -306,6 +293,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 16 - tammader
   - 🇦🇪 阿联酋 (UAE) 17 - tammader
   - 🇦🇪 阿联酋 (UAE) 18 - tammader
-  - 🇦🇪 阿联酋 (UAE) 19 - tammader
 rules:
 - MATCH,PROXIES

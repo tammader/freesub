@@ -24,6 +24,14 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇵🇱 PL 03 - tammader
+  type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +39,7 @@ proxy-groups:
   - AUTO
   - 🇵🇱 PL 01 - tammader
   - 🇵🇱 PL 02 - tammader
+  - 🇵🇱 PL 03 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -38,5 +47,6 @@ proxy-groups:
   proxies:
   - 🇵🇱 PL 01 - tammader
   - 🇵🇱 PL 02 - tammader
+  - 🇵🇱 PL 03 - tammader
 rules:
 - MATCH,PROXIES

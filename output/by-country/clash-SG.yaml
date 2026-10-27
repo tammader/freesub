@@ -5,18 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - tammader
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 511.150333.xyz
+  port: 21004
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 02 - tammader
   type: vless
-  server: 103.106.229.37
+  server: 511.150333.xyz
   port: 21004
   uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
   udp: true
@@ -27,6 +29,20 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 03 - tammader
+  type: vless
+  server: 139.162.27.96
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free-server.techsonic.dev
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 04 - tammader
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -36,7 +52,121 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 04 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 05 - tammader
+  type: vmess
+  server: wjofhsqteueywxeq.v.3dns.vip
+  port: 443
+  uuid: a9f4de8b-68f1-44b6-b6a2-1db60940503a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wjofhsqteueywxeq.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: wjofhsqteueywxeq.v.3dns.vip
+- name: 🇸🇬 新加坡 (Singapore) 06 - tammader
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 07 - tammader
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 08 - tammader
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 09 - tammader
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 10 - tammader
+  type: vless
+  server: 511.150333.xyz
+  port: 21003
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 11 - tammader
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 12 - tammader
+  type: vless
+  server: 45.132.75.213
+  port: 2053
+  uuid: f46182d1-e13b-47d3-97e2-fa5426a93e7c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: TpWeZocgNOygOhMo0l7oJawPu7STkn9D-SOa0UppcyY
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 13 - tammader
+  type: vless
+  server: 45.132.75.213
+  port: 2053
+  uuid: f46182d1-e13b-47d3-97e2-fa5426a93e7c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: TpWeZocgNOygOhMo0l7oJawPu7STkn9D-SOa0UppcyY
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 14 - tammader
+  type: vless
+  server: 511.150333.xyz
+  port: 21003
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 15 - tammader
   type: vless
   server: 511.150333.xyz
   port: 21004
@@ -48,7 +178,7 @@ proxies:
     public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 05 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 16 - tammader
   type: vmess
   server: ww11.levikogjgfdd.ir
   port: 18000
@@ -58,19 +188,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 06 - tammader
-  type: vless
-  server: 511.150333.xyz
-  port: 21001
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 07 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 17 - tammader
   type: vless
   server: 511.150333.xyz
   port: 21002
@@ -82,18 +200,9 @@ proxies:
     public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 08 - tammader
-  type: vless
-  server: 45.77.40.28
-  port: 443
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sg003.zestapp778.com
-- name: 🇸🇬 新加坡 (Singapore) 09 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 18 - tammader
   type: vmess
-  server: ww11.levikogjgfdd.ir
+  server: 149.88.23.207
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -101,21 +210,31 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 10 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 19 - tammader
   type: vless
-  server: 172.64.145.202
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 511.150333.xyz
+  port: 21002
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: newwk1.f1w.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: newwk1.f1w.de5.net
-- name: 🇸🇬 新加坡 (Singapore) 11 - tammader
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 20 - tammader
+  type: vless
+  server: 511.150333.xyz
+  port: 21002
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 21 - tammader
   type: vless
   server: 511.150333.xyz
   port: 21001
@@ -127,136 +246,29 @@ proxies:
     public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 12 - tammader
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 13 - tammader
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 14 - tammader
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 15 - tammader
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 16 - tammader
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 17 - tammader
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 18 - tammader
-  type: vless
-  server: 45.132.75.213
-  port: 2053
-  uuid: f46182d1-e13b-47d3-97e2-fa5426a93e7c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: TpWeZocgNOygOhMo0l7oJawPu7STkn9D-SOa0UppcyY
-  servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇸🇬 新加坡 (Singapore) 19 - tammader
-  type: vless
-  server: 43.174.193.1
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇸🇬 新加坡 (Singapore) 20 - tammader
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 21 - tammader
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 22 - tammader
-  type: vless
-  server: 45.77.40.28
-  port: 443
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: sg003.zestapp778.com
 - name: 🇸🇬 新加坡 (Singapore) 23 - tammader
-  type: vless
-  server: 511.150333.xyz
-  port: 21003
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 24 - tammader
   type: vmess
-  server: 149.88.23.202
+  server: 149.88.23.207
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -265,35 +277,19 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 25 - tammader
-  type: vless
-  server: v2.drsachi.com
-  port: 443
-  uuid: 270c3fa5-0293-4d68-875c-6cdc3bdc5b84
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tiktok.com
 - name: 🇸🇬 新加坡 (Singapore) 26 - tammader
   type: vless
-  server: v2.drsachi.com
-  port: 443
-  uuid: 270c3fa5-0293-4d68-875c-6cdc3bdc5b84
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tiktok.com
-- name: 🇸🇬 新加坡 (Singapore) 27 - tammader
-  type: vless
   server: 511.150333.xyz
-  port: 21003
+  port: 21004
   uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
   udp: true
   tls: true
@@ -301,10 +297,20 @@ proxies:
   reality-opts:
     public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 28 - tammader
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 27 - tammader
   type: vmess
   server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 28 - tammader
+  type: vmess
+  server: 149.88.23.202
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -333,10 +339,10 @@ proxies:
   reality-opts:
     public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇸🇬 新加坡 (Singapore) 31 - tammader
   type: vmess
-  server: 149.88.23.207
+  server: ww11.levikogjgfdd.ir
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -345,50 +351,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 32 - tammader
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 33 - tammader
-  type: vless
-  server: 511.150333.xyz
-  port: 21001
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 34 - tammader
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 35 - tammader
-  type: vless
-  server: 511.150333.xyz
-  port: 21001
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 36 - tammader
   type: vless
   server: 510.150333.xyz
   port: 21004
@@ -400,32 +362,58 @@ proxies:
     public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 37 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 33 - tammader
   type: vless
-  server: 510.150333.xyz
-  port: 21003
-  uuid: 67952583-8572-42e1-943d-0602794f885b
+  server: 45.32.117.217
+  port: 443
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sg003.zestapp778.com
+- name: 🇸🇬 新加坡 (Singapore) 34 - tammader
+  type: vless
+  server: 139.162.27.96
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free-server.techsonic.dev
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 35 - tammader
+  type: vless
+  server: 45.132.75.213
+  port: 2053
+  uuid: f46182d1-e13b-47d3-97e2-fa5426a93e7c
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+    public-key: TpWeZocgNOygOhMo0l7oJawPu7STkn9D-SOa0UppcyY
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 38 - tammader
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 36 - tammader
+  type: vless
+  server: v2.drsachi.com
+  port: 443
+  uuid: 270c3fa5-0293-4d68-875c-6cdc3bdc5b84
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 39 - tammader
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v2.drsachi.com
+- name: 🇸🇬 新加坡 (Singapore) 37 - tammader
   type: vless
-  server: 511.150333.xyz
-  port: 21003
+  server: 103.106.229.37
+  port: 21004
   uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
   udp: true
   tls: true
@@ -434,16 +422,37 @@ proxies:
     public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 40 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 38 - tammader
+  type: vless
+  server: 139.162.27.96
+  port: 443
+  uuid: f1178fbe-1420-4eef-b087-4f33b32b4a19
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aka.ms
+- name: 🇸🇬 新加坡 (Singapore) 39 - tammader
   type: vless
   server: 510.150333.xyz
-  port: 21003
+  port: 21004
   uuid: 67952583-8572-42e1-943d-0602794f885b
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
     public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 40 - tammader
+  type: vless
+  server: 511.150333.xyz
+  port: 21001
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 41 - tammader
@@ -458,8 +467,97 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 42 - tammader
   type: vless
+  server: 510.150333.xyz
+  port: 21003
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 43 - tammader
+  type: vless
+  server: 510.150333.xyz
+  port: 21001
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 44 - tammader
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 45 - tammader
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 46 - tammader
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 47 - tammader
+  type: vless
+  server: v2.drsachi.com
+  port: 443
+  uuid: 270c3fa5-0293-4d68-875c-6cdc3bdc5b84
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tiktok.com
+- name: 🇸🇬 新加坡 (Singapore) 48 - tammader
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 49 - tammader
+  type: vless
+  server: 45.132.75.213
+  port: 2053
+  uuid: f46182d1-e13b-47d3-97e2-fa5426a93e7c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: TpWeZocgNOygOhMo0l7oJawPu7STkn9D-SOa0UppcyY
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 50 - tammader
+  type: vless
   server: 511.150333.xyz
-  port: 21004
+  port: 21001
   uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
   udp: true
   tls: true
@@ -468,7 +566,7 @@ proxies:
     public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 43 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 51 - tammader
   type: vless
   server: 510.150333.xyz
   port: 21003
@@ -480,131 +578,40 @@ proxies:
     public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 44 - tammader
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 45 - tammader
-  type: vless
-  server: 139.162.27.96
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 46 - tammader
-  type: vless
-  server: v2.drsachi.com
-  port: 443
-  uuid: 270c3fa5-0293-4d68-875c-6cdc3bdc5b84
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: v2.drsachi.com
-- name: 🇸🇬 新加坡 (Singapore) 47 - tammader
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 48 - tammader
-  type: vless
-  server: v2.drsachi.com
-  port: 443
-  uuid: 270c3fa5-0293-4d68-875c-6cdc3bdc5b84
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: v2.drsachi.com
-- name: 🇸🇬 新加坡 (Singapore) 49 - tammader
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 50 - tammader
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 51 - tammader
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 52 - tammader
   type: vless
-  server: 511.150333.xyz
-  port: 21002
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  server: 510.150333.xyz
+  port: 21003
+  uuid: 67952583-8572-42e1-943d-0602794f885b
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇸🇬 新加坡 (Singapore) 53 - tammader
   type: vless
-  server: 139.162.27.96
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  server: 45.132.75.213
+  port: 2053
+  uuid: f46182d1-e13b-47d3-97e2-fa5426a93e7c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
+  reality-opts:
+    public-key: TpWeZocgNOygOhMo0l7oJawPu7STkn9D-SOa0UppcyY
+  servername: www.cloudflare.com
+  client-fingerprint: ios
 - name: 🇸🇬 新加坡 (Singapore) 54 - tammader
-  type: vless
-  server: sg003.zestapp778.com
-  port: 443
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: sg003.zestapp778.com
 - name: 🇸🇬 新加坡 (Singapore) 55 - tammader
   type: vmess
   server: 149.88.23.207
@@ -617,7 +624,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 56 - tammader
   type: vmess
-  server: 149.88.23.207
+  server: 149.88.23.202
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -626,18 +633,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 57 - tammader
-  type: vless
-  server: 511.150333.xyz
-  port: 21004
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 58 - tammader
   type: vmess
   server: ww11.levikogjgfdd.ir
   port: 18000
@@ -647,7 +642,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 59 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 58 - tammader
   type: vmess
   server: 149.88.23.202
   port: 18000
@@ -657,7 +652,31 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 59 - tammader
+  type: vless
+  server: 511.150333.xyz
+  port: 21001
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 60 - tammader
+  type: vless
+  server: 511.150333.xyz
+  port: 21003
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 61 - tammader
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -667,52 +686,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 61 - tammader
-  type: vless
-  server: sg003.zestapp778.com
-  port: 443
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sg003.zestapp778.com
 - name: 🇸🇬 新加坡 (Singapore) 62 - tammader
-  type: vless
-  server: 45.132.75.213
-  port: 2053
-  uuid: f46182d1-e13b-47d3-97e2-fa5426a93e7c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: TpWeZocgNOygOhMo0l7oJawPu7STkn9D-SOa0UppcyY
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 63 - tammader
-  type: vless
-  server: 45.132.75.213
-  port: 2053
-  uuid: f46182d1-e13b-47d3-97e2-fa5426a93e7c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: TpWeZocgNOygOhMo0l7oJawPu7STkn9D-SOa0UppcyY
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 64 - tammader
-  type: vless
-  server: 510.150333.xyz
-  port: 21001
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 65 - tammader
   type: vless
   server: v2.drsachi.com
   port: 443
@@ -725,7 +699,7 @@ proxies:
     path: /
     headers:
       Host: v2.drsachi.com
-- name: 🇸🇬 新加坡 (Singapore) 66 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 63 - tammader
   type: vmess
   server: 149.88.23.202
   port: 18000
@@ -735,7 +709,136 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 64 - tammader
+  type: vless
+  server: sg003.zestapp778.com
+  port: 443
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sg003.zestapp778.com
+- name: 🇸🇬 新加坡 (Singapore) 65 - tammader
+  type: vless
+  server: 45.77.40.28
+  port: 443
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sg003.zestapp778.com
+- name: 🇸🇬 新加坡 (Singapore) 66 - tammader
+  type: vless
+  server: 103.106.229.37
+  port: 21004
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 67 - tammader
+  type: vless
+  server: 510.150333.xyz
+  port: 21004
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 68 - tammader
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 69 - tammader
+  type: vless
+  server: v2.drsachi.com
+  port: 443
+  uuid: 270c3fa5-0293-4d68-875c-6cdc3bdc5b84
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tiktok.com
+- name: 🇸🇬 新加坡 (Singapore) 70 - tammader
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 71 - tammader
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 72 - tammader
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 73 - tammader
+  type: vless
+  server: 511.150333.xyz
+  port: 21004
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 74 - tammader
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 75 - tammader
+  type: vless
+  server: 511.150333.xyz
+  port: 21004
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 76 - tammader
   type: vless
   server: 511.150333.xyz
   port: 21002
@@ -747,43 +850,7 @@ proxies:
     public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 68 - tammader
-  type: vless
-  server: 175.41.179.37
-  port: 51262
-  uuid: 903fed13-8e78-4fa2-a83e-b392b289741f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 69 - tammader
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 70 - tammader
-  type: vless
-  server: 45.132.75.213
-  port: 2053
-  uuid: f46182d1-e13b-47d3-97e2-fa5426a93e7c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: TpWeZocgNOygOhMo0l7oJawPu7STkn9D-SOa0UppcyY
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 71 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 77 - tammader
   type: vless
   server: 511.150333.xyz
   port: 21003
@@ -795,7 +862,107 @@ proxies:
     public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 72 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 78 - tammader
+  type: vless
+  server: 510.150333.xyz
+  port: 21002
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 79 - tammader
+  type: vless
+  server: v2.drsachi.com
+  port: 443
+  uuid: 270c3fa5-0293-4d68-875c-6cdc3bdc5b84
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v2.drsachi.com
+- name: 🇸🇬 新加坡 (Singapore) 80 - tammader
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 81 - tammader
+  type: vless
+  server: 511.150333.xyz
+  port: 21001
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 82 - tammader
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 83 - tammader
+  type: vless
+  server: 43.174.193.1
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇸🇬 新加坡 (Singapore) 84 - tammader
+  type: vless
+  server: 45.77.40.28
+  port: 443
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sg003.zestapp778.com
+- name: 🇸🇬 新加坡 (Singapore) 85 - tammader
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 86 - tammader
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 87 - tammader
   type: vless
   server: 43.174.193.1
   port: 443
@@ -809,194 +976,18 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇸🇬 新加坡 (Singapore) 73 - tammader
-  type: vless
-  server: 139.162.27.96
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 74 - tammader
-  type: vless
-  server: 510.150333.xyz
-  port: 21002
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 75 - tammader
-  type: vless
-  server: 511.150333.xyz
-  port: 21001
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 76 - tammader
-  type: vless
-  server: 104.17.3.81
-  port: 443
-  uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nautica-cff.kloningstrife002.workers.dev
-  network: ws
-  ws-opts:
-    path: /138.2.74.219-28616
-    headers:
-      Host: nautica-cff.kloningstrife002.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 77 - tammader
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 78 - tammader
-  type: vless
-  server: 45.132.75.213
-  port: 2053
-  uuid: f46182d1-e13b-47d3-97e2-fa5426a93e7c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: TpWeZocgNOygOhMo0l7oJawPu7STkn9D-SOa0UppcyY
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 79 - tammader
-  type: vless
-  server: 103.106.229.37
-  port: 21004
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 80 - tammader
-  type: vless
-  server: 510.150333.xyz
-  port: 21004
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 81 - tammader
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 82 - tammader
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 83 - tammader
-  type: vless
-  server: 45.132.75.213
-  port: 2053
-  uuid: f46182d1-e13b-47d3-97e2-fa5426a93e7c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: TpWeZocgNOygOhMo0l7oJawPu7STkn9D-SOa0UppcyY
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 84 - tammader
-  type: vless
-  server: 510.150333.xyz
-  port: 21004
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 85 - tammader
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 86 - tammader
-  type: vless
-  server: 511.150333.xyz
-  port: 21004
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 87 - tammader
-  type: vless
-  server: 103.106.229.37
-  port: 21004
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 88 - tammader
   type: vless
-  server: 511.150333.xyz
-  port: 21004
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  server: 45.132.75.213
+  port: 2053
+  uuid: f46182d1-e13b-47d3-97e2-fa5426a93e7c
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    public-key: TpWeZocgNOygOhMo0l7oJawPu7STkn9D-SOa0UppcyY
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: ios
 - name: 🇸🇬 新加坡 (Singapore) 89 - tammader
   type: vmess
   server: ww11.levikogjgfdd.ir
@@ -1018,16 +1009,31 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 91 - tammader
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: v2.drsachi.com
+  port: 443
+  uuid: 270c3fa5-0293-4d68-875c-6cdc3bdc5b84
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v2.drsachi.com
 - name: 🇸🇬 新加坡 (Singapore) 92 - tammader
+  type: vless
+  server: 103.106.229.37
+  port: 21004
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 93 - tammader
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -1037,7 +1043,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 93 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 94 - tammader
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 95 - tammader
   type: vless
   server: 511.150333.xyz
   port: 21003
@@ -1049,40 +1065,30 @@ proxies:
     public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 94 - tammader
-  type: vless
-  server: 139.162.27.96
-  port: 443
-  uuid: f1178fbe-1420-4eef-b087-4f33b32b4a19
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aka.ms
-- name: 🇸🇬 新加坡 (Singapore) 95 - tammader
-  type: vless
-  server: 511.150333.xyz
-  port: 21004
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: random
 - name: 🇸🇬 新加坡 (Singapore) 96 - tammader
-  type: vless
-  server: 45.32.117.217
-  port: 443
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: sg003.zestapp778.com
 - name: 🇸🇬 新加坡 (Singapore) 97 - tammader
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 98 - tammader
   type: vless
   server: 510.150333.xyz
-  port: 21003
+  port: 21004
   uuid: 67952583-8572-42e1-943d-0602794f885b
   udp: true
   tls: true
@@ -1090,8 +1096,8 @@ proxies:
   reality-opts:
     public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 98 - tammader
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 99 - tammader
   type: vless
   server: 511.150333.xyz
   port: 21002
@@ -1103,19 +1109,9 @@ proxies:
     public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 99 - tammader
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 100 - tammader
   type: vmess
-  server: ww11.levikogjgfdd.ir
+  server: 149.88.23.207
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -1135,27 +1131,43 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 102 - tammader
   type: vless
-  server: 511.150333.xyz
-  port: 21002
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  server: 139.162.27.96
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free-server.techsonic.dev
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 103 - tammader
+  type: vless
+  server: 45.132.75.213
+  port: 2053
+  uuid: f46182d1-e13b-47d3-97e2-fa5426a93e7c
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    public-key: TpWeZocgNOygOhMo0l7oJawPu7STkn9D-SOa0UppcyY
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 103 - tammader
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  client-fingerprint: firefox
 - name: 🇸🇬 新加坡 (Singapore) 104 - tammader
+  type: vless
+  server: 45.132.75.213
+  port: 2053
+  uuid: f46182d1-e13b-47d3-97e2-fa5426a93e7c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: TpWeZocgNOygOhMo0l7oJawPu7STkn9D-SOa0UppcyY
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 🇸🇬 新加坡 (Singapore) 105 - tammader
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -1165,10 +1177,10 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 105 - tammader
+- name: 🇸🇬 新加坡 (Singapore) 106 - tammader
   type: vless
   server: 510.150333.xyz
-  port: 21004
+  port: 21003
   uuid: 67952583-8572-42e1-943d-0602794f885b
   udp: true
   tls: true
@@ -1176,7 +1188,27 @@ proxies:
   reality-opts:
     public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 107 - tammader
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 108 - tammader
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1287,6 +1319,9 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 103 - tammader
   - 🇸🇬 新加坡 (Singapore) 104 - tammader
   - 🇸🇬 新加坡 (Singapore) 105 - tammader
+  - 🇸🇬 新加坡 (Singapore) 106 - tammader
+  - 🇸🇬 新加坡 (Singapore) 107 - tammader
+  - 🇸🇬 新加坡 (Singapore) 108 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1397,5 +1432,8 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 103 - tammader
   - 🇸🇬 新加坡 (Singapore) 104 - tammader
   - 🇸🇬 新加坡 (Singapore) 105 - tammader
+  - 🇸🇬 新加坡 (Singapore) 106 - tammader
+  - 🇸🇬 新加坡 (Singapore) 107 - tammader
+  - 🇸🇬 新加坡 (Singapore) 108 - tammader
 rules:
 - MATCH,PROXIES

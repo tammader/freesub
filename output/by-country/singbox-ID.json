@@ -6,14 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 ID 01 - tammader"
+        "🇮🇩 ID 01 - tammader",
+        "🇮🇩 ID 02 - tammader",
+        "🇮🇩 ID 03 - tammader",
+        "🇮🇩 ID 04 - tammader",
+        "🇮🇩 ID 05 - tammader",
+        "🇮🇩 ID 06 - tammader"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 ID 01 - tammader"
+        "🇮🇩 ID 01 - tammader",
+        "🇮🇩 ID 02 - tammader",
+        "🇮🇩 ID 03 - tammader",
+        "🇮🇩 ID 04 - tammader",
+        "🇮🇩 ID 05 - tammader",
+        "🇮🇩 ID 06 - tammader"
       ],
       "url": "https://www.google.com/generate_204"
     },

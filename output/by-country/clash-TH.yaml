@@ -15,7 +15,7 @@ proxies:
   servername: th001.zestapp778.com
 - name: 🇹🇭 TH 02 - tammader
   type: vless
-  server: 104.18.26.90
+  server: 104.16.10.9
   port: 443
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
@@ -43,30 +43,22 @@ proxies:
       Host: v2ray.simspeedup.com
 - name: 🇹🇭 TH 04 - tammader
   type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  server: 38.60.254.50
+  port: 22222
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ais.speedtest.net
+  servername: th001.zestapp778.com
 - name: 🇹🇭 TH 05 - tammader
   type: vless
-  server: 103.86.49.57
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  server: th001.zestapp778.com
+  port: 22222
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: aIs.SpEeDtEsT.nEt
+  servername: th001.zestapp778.com
 - name: 🇹🇭 TH 06 - tammader
   type: vless
   server: 38.60.254.50
@@ -78,55 +70,6 @@ proxies:
   servername: th001.zestapp778.com
 - name: 🇹🇭 TH 07 - tammader
   type: vless
-  server: 38.60.254.50
-  port: 22222
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: th001.zestapp778.com
-- name: 🇹🇭 TH 08 - tammader
-  type: vless
-  server: v2ray.simspeedup.com
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 09 - tammader
-  type: vless
-  server: 103.86.49.57
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ais.speedtest.net
-- name: 🇹🇭 TH 10 - tammader
-  type: vless
-  server: 104.16.10.9
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray.simspeedup.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 11 - tammader
-  type: vless
   server: th001.zestapp778.com
   port: 22222
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
@@ -134,7 +77,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: th001.zestapp778.com
-- name: 🇹🇭 TH 12 - tammader
+- name: 🇹🇭 TH 08 - tammader
   type: vless
   server: 38.60.254.50
   port: 22222
@@ -156,10 +99,6 @@ proxy-groups:
   - 🇹🇭 TH 06 - tammader
   - 🇹🇭 TH 07 - tammader
   - 🇹🇭 TH 08 - tammader
-  - 🇹🇭 TH 09 - tammader
-  - 🇹🇭 TH 10 - tammader
-  - 🇹🇭 TH 11 - tammader
-  - 🇹🇭 TH 12 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -173,9 +112,5 @@ proxy-groups:
   - 🇹🇭 TH 06 - tammader
   - 🇹🇭 TH 07 - tammader
   - 🇹🇭 TH 08 - tammader
-  - 🇹🇭 TH 09 - tammader
-  - 🇹🇭 TH 10 - tammader
-  - 🇹🇭 TH 11 - tammader
-  - 🇹🇭 TH 12 - tammader
 rules:
 - MATCH,PROXIES

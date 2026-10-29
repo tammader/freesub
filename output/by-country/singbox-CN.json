@@ -7,7 +7,9 @@
       "outbounds": [
         "auto",
         "🇨🇳 CN 01 - tammader",
-        "🇨🇳 CN 02 - tammader"
+        "🇨🇳 CN 02 - tammader",
+        "🇨🇳 CN 03 - tammader",
+        "🇨🇳 CN 04 - tammader"
       ]
     },
     {
@@ -15,7 +17,9 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇳 CN 01 - tammader",
-        "🇨🇳 CN 02 - tammader"
+        "🇨🇳 CN 02 - tammader",
+        "🇨🇳 CN 03 - tammader",
+        "🇨🇳 CN 04 - tammader"
       ],
       "url": "https://www.google.com/generate_204"
     },

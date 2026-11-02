@@ -6,16 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - tammader",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - tammader"
+        "🇨🇳 CN 01 - tammader",
+        "🇨🇳 CN 02 - tammader",
+        "🇨🇳 CN 03 - tammader",
+        "🇨🇳 CN 04 - tammader",
+        "🇨🇳 CN 05 - tammader"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - tammader",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - tammader"
+        "🇨🇳 CN 01 - tammader",
+        "🇨🇳 CN 02 - tammader",
+        "🇨🇳 CN 03 - tammader",
+        "🇨🇳 CN 04 - tammader",
+        "🇨🇳 CN 05 - tammader"
       ],
       "url": "https://www.google.com/generate_204"
     },

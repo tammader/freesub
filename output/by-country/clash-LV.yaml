@@ -4,30 +4,27 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇰 LK 01 - tammader
-  type: vless
-  server: 170.114.45.6
-  port: 8080
-  uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
+- name: 🇱🇻 LV 01 - tammader
+  type: vmess
+  server: 95.182.115.178
+  port: 443
+  uuid: db753334-5fd1-472b-b3e0-458bc2189c58
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇰 LK 01 - tammader
+  - 🇱🇻 LV 01 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 LK 01 - tammader
+  - 🇱🇻 LV 01 - tammader
 rules:
 - MATCH,PROXIES

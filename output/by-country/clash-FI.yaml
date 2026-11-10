@@ -6,8 +6,8 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - tammader
   type: vless
-  server: 138.124.124.157
-  port: 443
+  server: 138.124.49.108
+  port: 8443
   uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   udp: true
   tls: true
@@ -34,8 +34,22 @@ proxies:
       Host: nl2.574ck.xyz
 - name: 🇫🇮 FI 03 - tammader
   type: vless
-  server: 138.124.49.108
-  port: 8443
+  server: 146.103.118.189
+  port: 443
+  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nl2.574ck.xyz
+  network: ws
+  ws-opts:
+    path: /574ck-finland
+    headers:
+      Host: nl2.574ck.xyz
+- name: 🇫🇮 FI 04 - tammader
+  type: vless
+  server: 109.120.134.181
+  port: 443
   uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   udp: true
   tls: true
@@ -46,7 +60,7 @@ proxies:
     path: /fp=chrome
     headers:
       Host: fs.qicai99.com
-- name: 🇫🇮 FI 04 - tammader
+- name: 🇫🇮 FI 05 - tammader
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -59,20 +73,6 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 05 - tammader
-  type: vless
-  server: 84.22.150.39
-  port: 7443
-  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
 - name: 🇫🇮 FI 06 - tammader
   type: vless
   server: 45.144.234.157
@@ -87,30 +87,6 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 07 - tammader
-  type: vmess
-  server: 65.108.240.210
-  port: 39018
-  uuid: 77fb7a80-4724-4e33-9558-4f20c1634c5a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 08 - tammader
-  type: vless
-  server: 146.103.118.189
-  port: 443
-  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nl2.574ck.xyz
-  network: ws
-  ws-opts:
-    path: /574ck-finland
-    headers:
-      Host: nl2.574ck.xyz
-- name: 🇫🇮 FI 09 - tammader
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -135,8 +111,6 @@ proxy-groups:
   - 🇫🇮 FI 05 - tammader
   - 🇫🇮 FI 06 - tammader
   - 🇫🇮 FI 07 - tammader
-  - 🇫🇮 FI 08 - tammader
-  - 🇫🇮 FI 09 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -149,7 +123,5 @@ proxy-groups:
   - 🇫🇮 FI 05 - tammader
   - 🇫🇮 FI 06 - tammader
   - 🇫🇮 FI 07 - tammader
-  - 🇫🇮 FI 08 - tammader
-  - 🇫🇮 FI 09 - tammader
 rules:
 - MATCH,PROXIES

@@ -19,7 +19,7 @@ proxies:
       Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 02 - tammader
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -44,6 +44,13 @@ proxies:
     headers:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - tammader
+  type: ss
+  server: 151.241.19.29
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇦🇪 阿联酋 (UAE) 05 - tammader
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -56,7 +63,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - tammader
+- name: 🇦🇪 阿联酋 (UAE) 06 - tammader
   type: vless
   server: 95.174.68.188
   port: 14430
@@ -69,13 +76,6 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 06 - tammader
-  type: ss
-  server: 151.241.19.36
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - name: 🇦🇪 阿联酋 (UAE) 07 - tammader
   type: vless
   server: 95.174.68.188
@@ -130,7 +130,7 @@ proxies:
       Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 11 - tammader
   type: ss
-  server: 151.241.19.29
+  server: 151.241.19.36
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=

@@ -6,28 +6,19 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - tammader
   type: vless
-  server: 146.103.118.189
-  port: 443
-  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  server: 138.124.49.108
+  port: 8443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nl2.574ck.xyz
+  servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /574ck-finland
+    path: /fp=chromefp=chrome
     headers:
-      Host: nl2.574ck.xyz
+      Host: fs.qicai99.com
 - name: 🇫🇮 FI 02 - tammader
-  type: vless
-  server: 65.109.208.183
-  port: 443
-  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.for.member.iiproxy.com
-- name: 🇫🇮 FI 03 - tammader
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -40,6 +31,20 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 FI 03 - tammader
+  type: vless
+  server: 146.103.118.189
+  port: 443
+  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nl2.574ck.xyz
+  network: ws
+  ws-opts:
+    path: /574ck-finland
+    headers:
+      Host: nl2.574ck.xyz
 - name: 🇫🇮 FI 04 - tammader
   type: vless
   server: 45.144.234.157
@@ -54,15 +59,6 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 05 - tammader
-  type: vless
-  server: 65.109.208.183
-  port: 443
-  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.for.member.iiproxy.com
-- name: 🇫🇮 FI 06 - tammader
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -85,7 +81,6 @@ proxy-groups:
   - 🇫🇮 FI 03 - tammader
   - 🇫🇮 FI 04 - tammader
   - 🇫🇮 FI 05 - tammader
-  - 🇫🇮 FI 06 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -96,6 +91,5 @@ proxy-groups:
   - 🇫🇮 FI 03 - tammader
   - 🇫🇮 FI 04 - tammader
   - 🇫🇮 FI 05 - tammader
-  - 🇫🇮 FI 06 - tammader
 rules:
 - MATCH,PROXIES

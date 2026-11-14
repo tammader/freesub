@@ -12,34 +12,6 @@ proxies:
   password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - tammader
-  type: vless
-  server: 185.86.147.175
-  port: 443
-  uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bhjolq0d0l.flowersgood.top
-  network: ws
-  ws-opts:
-    path: /service/telemetry/045d381f1166/
-    headers:
-      Host: bhjolq0d0l.flowersgood.top
-- name: 🇷🇺 俄罗斯 (Russia) 03 - tammader
-  type: vless
-  server: 31.177.111.184
-  port: 443
-  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: zry9ocg43w.flowersgood.top
-  network: ws
-  ws-opts:
-    path: /static/collect/9412171e8a3a/
-    headers:
-      Host: zry9ocg43w.flowersgood.top
-- name: 🇷🇺 俄罗斯 (Russia) 04 - tammader
   type: ss
   server: 185.22.153.117
   port: 18443
@@ -53,8 +25,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - tammader
   - 🇷🇺 俄罗斯 (Russia) 02 - tammader
-  - 🇷🇺 俄罗斯 (Russia) 03 - tammader
-  - 🇷🇺 俄罗斯 (Russia) 04 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,7 +32,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - tammader
   - 🇷🇺 俄罗斯 (Russia) 02 - tammader
-  - 🇷🇺 俄罗斯 (Russia) 03 - tammader
-  - 🇷🇺 俄罗斯 (Russia) 04 - tammader
 rules:
 - MATCH,PROXIES

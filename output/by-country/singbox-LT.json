@@ -6,16 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 LK 01 - tammader",
-        "🇱🇰 LK 02 - tammader"
+        "🇱🇹 LT 01 - tammader",
+        "🇱🇹 LT 02 - tammader",
+        "🇱🇹 LT 03 - tammader"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 LK 01 - tammader",
-        "🇱🇰 LK 02 - tammader"
+        "🇱🇹 LT 01 - tammader",
+        "🇱🇹 LT 02 - tammader",
+        "🇱🇹 LT 03 - tammader"
       ],
       "url": "https://www.google.com/generate_204"
     },

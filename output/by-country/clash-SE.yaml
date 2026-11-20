@@ -35,18 +35,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇸🇪 SE 04 - tammader
-  type: vless
-  server: 88.216.214.159
-  port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: api-svc-mgr.galioncc.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,7 +43,6 @@ proxy-groups:
   - 🇸🇪 SE 01 - tammader
   - 🇸🇪 SE 02 - tammader
   - 🇸🇪 SE 03 - tammader
-  - 🇸🇪 SE 04 - tammader
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -64,6 +51,5 @@ proxy-groups:
   - 🇸🇪 SE 01 - tammader
   - 🇸🇪 SE 02 - tammader
   - 🇸🇪 SE 03 - tammader
-  - 🇸🇪 SE 04 - tammader
 rules:
 - MATCH,PROXIES
